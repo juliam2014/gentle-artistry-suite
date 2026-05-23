@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
+import { VAGARO_BOOKING_URL } from "@/lib/booking";
 import heroSalon from "@/assets/hero-salon.jpg";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";

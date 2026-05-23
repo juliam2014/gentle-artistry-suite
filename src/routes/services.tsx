@@ -143,7 +143,7 @@ const scalpAddons = [
     benefits: [
       "Supports healthy growth",
       "Great for postpartum, stress shedding, or thinning concerns",
-      "Feels like “hair care investment” not a service",
+      "​",
     ],
   },
 ];

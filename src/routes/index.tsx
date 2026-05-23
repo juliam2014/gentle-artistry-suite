@@ -274,57 +274,6 @@ function Index() {
         </div>
       </section>
 
-      {/* BOOKING TEASER */}
-      <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
-          <img
-            src={ritualFlatlay}
-            alt="Glass hair oil bottle and marble comb on natural linen"
-            width={900}
-            height={1100}
-            loading="lazy"
-            className="w-full aspect-[4/5] object-cover"
-          />
-          <div className="space-y-8">
-            <span className="eyebrow block">Reserve Your Experience</span>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              Begin your journey to radiant confidence.
-            </h2>
-            <div className="space-y-6 pt-2">
-              {[
-                { name: "The Signature Scalp Facial", meta: "75 Minutes • From $145" },
-                { name: "Lived-in Dimensional Color", meta: "180 Minutes • From $325" },
-                { name: "Essential Esthetic Refresh", meta: "45 Minutes • From $95" },
-              ].map((s) => (
-                <a
-                  key={s.name}
-                  href={VAGARO_BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group border-b border-foreground/10 pb-6 flex justify-between items-center"
-                >
-                  <div>
-                    <p className="font-serif text-xl">{s.name}</p>
-                    <p className="text-[10px] text-foreground/50 uppercase tracking-luxe mt-1">
-                      {s.meta}
-                    </p>
-                  </div>
-                  <span className="text-[11px] uppercase tracking-luxe group-hover:translate-x-2 transition-transform">
-                    Book →
-                  </span>
-                </a>
-              ))}
-            </div>
-            <Link
-              to="/services"
-              className="inline-block border-b border-foreground py-1 text-[11px] uppercase tracking-luxe font-medium"
-            >
-              View Full Service Menu
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
       <section className="py-24 md:py-32 px-6 lg:px-8 bg-beige/30">
         <div className="max-w-6xl mx-auto">

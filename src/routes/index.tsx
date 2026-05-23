@@ -9,7 +9,7 @@ import productShampoo from "@/assets/product-shampoo.jpg";
 import productBrush from "@/assets/product-brush.jpg";
 import productCream from "@/assets/product-cream.jpg";
 import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
-import juliaEditorial2 from "@/assets/julia-editorial-2.jpg";
+
 import salonSpace1 from "@/assets/salon-space-1.jpg";
 import salonSpace2 from "@/assets/salon-space-2.jpg";
 import salonSpace3 from "@/assets/salon-space-3.jpg";
@@ -121,48 +121,25 @@ function Index() {
         </div>
       </section>
 
-      {/* STUDIO PORTRAITS */}
+      {/* ABOUT */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="eyebrow block mb-6">The Artist</span>
-            <h2 className="font-serif italic text-4xl md:text-5xl">Behind the chair</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <figure className="space-y-4">
-              <img
-                src={juliaEditorial1}
-                alt="Julia — editorial portrait in the studio"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                Editorial — Julia Marks
-              </figcaption>
-            </figure>
-            <figure className="space-y-4">
-              <img
-                src={juliaEditorial2}
-                alt="Julia at work — behind the chair"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                In Her Element
-              </figcaption>
-            </figure>
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              to="/gallery"
-              className="inline-block border-b border-foreground py-1 text-[11px] uppercase tracking-luxe font-medium"
-            >
-              View the Full Gallery
-            </Link>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+          <img
+            src={juliaEditorial1}
+            alt="Julia Marks"
+            width={800}
+            height={1000}
+            className="w-full aspect-[4/5] object-cover"
+          />
+          <div className="space-y-6">
+            <span className="eyebrow block">About</span>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">The Artist Behind the Chair</h2>
+            <p className="text-foreground/70 leading-relaxed">
+              [Your about me text goes here — write your story, your philosophy, and what makes your studio special.]
+            </p>
+            <p className="text-foreground/70 leading-relaxed">
+              [Add more paragraphs about your journey, training, and what clients can expect when they sit in your chair.]
+            </p>
           </div>
         </div>
       </section>

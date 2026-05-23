@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
 import { VAGARO_BOOKING_URL } from "@/lib/booking";
-import heroSalon from "@/assets/hero-salon.jpg";
-import heroPortrait from "@/assets/hero-portrait.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 import productSerum from "@/assets/product-serum.jpg";
 import productShampoo from "@/assets/product-shampoo.jpg";
@@ -34,9 +32,9 @@ export const Route = createFileRoute("/")({
         content:
           "Custom balayage, blonding, scalp facials, and beauty services in Spring Hill, TN.",
       },
-      { property: "og:image", content: heroSalon },
+      { property: "og:image", content: juliaEditorial1 },
       { property: "og:url", content: "/" },
-      { name: "twitter:image", content: heroSalon },
+      { name: "twitter:image", content: juliaEditorial1 },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -74,65 +72,6 @@ const testimonials = [
 function Index() {
   return (
     <>
-      {/* HERO */}
-      <section className="pt-40 md:pt-44 pb-20 md:pb-24 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <span className="eyebrow mb-6 animate-fade-in">The Ritual of Being</span>
-          <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[15ch]">
-            Radiate from <em className="italic text-accent">within</em>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
-            A boutique sanctuary for intentional beauty. We blend advanced scalp
-            health, customized hair artistry, and holistic skincare to elevate your
-            natural confidence.
-          </p>
-          <div className="mt-12 flex flex-wrap justify-center gap-4 animate-fade-up [animation-delay:400ms]">
-            <a
-              href={VAGARO_BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
-            >
-              Book Appointment
-            </a>
-            <Link
-              to="/shop"
-              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
-            >
-              Shop Products
-            </Link>
-            <Link
-              to="/services"
-              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
-            >
-              Explore Services
-            </Link>
-          </div>
-
-          <div className="mt-20 md:mt-24 w-full grid grid-cols-12 gap-4 md:gap-6 animate-fade-up [animation-delay:600ms]">
-            <div className="col-span-12 md:col-span-8">
-              <img
-                src={heroSalon}
-                alt="Sun-drenched luxury salon interior with cream linen and organic textures"
-                width={1600}
-                height={900}
-                className="w-full aspect-[16/9] object-cover"
-              />
-            </div>
-            <div className="col-span-12 md:col-span-4 flex flex-col justify-end">
-              <img
-                src={heroPortrait}
-                alt="Soft still life of fresh flowers and linen on a marble surface"
-                width={800}
-                height={1100}
-                loading="lazy"
-                className="w-full aspect-[3/4] object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ABOUT JULIA */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -206,6 +145,43 @@ function Index() {
                 Book With Julia
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HERO */}
+      <section className="pt-40 md:pt-44 pb-20 md:pb-24 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+          <span className="eyebrow mb-6 animate-fade-in">The Ritual of Being</span>
+          <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[15ch]">
+            Radiate from <em className="italic text-accent">within</em>
+          </h1>
+          <p className="mt-8 max-w-xl text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
+            A boutique sanctuary for intentional beauty. We blend advanced scalp
+            health, customized hair artistry, and holistic skincare to elevate your
+            natural confidence.
+          </p>
+          <div className="mt-12 flex flex-wrap justify-center gap-4 animate-fade-up [animation-delay:400ms]">
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
+            >
+              Book Appointment
+            </a>
+            <Link
+              to="/shop"
+              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
+            >
+              Shop Products
+            </Link>
+            <Link
+              to="/services"
+              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
+            >
+              Explore Services
+            </Link>
           </div>
         </div>
       </section>

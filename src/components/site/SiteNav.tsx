@@ -6,6 +6,7 @@ import { VAGARO_BOOKING_URL } from "@/lib/booking";
 const links = [
   { to: "/services", label: "Services" },
   { to: "/shop", label: "Shop" },
+  { to: "/blog", label: "Blog" },
   { to: "/education", label: "Education" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },

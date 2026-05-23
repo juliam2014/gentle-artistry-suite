@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageHeader } from "@/components/site/PageHeader";
-import galleryBlonde from "@/assets/gallery-blonde.jpg";
+import galleryBlonde from "/3d35bc30-57b1-48e7-a442-9c9c4da3aee3.jpg";
 import galleryBrunette from "/181f7482-3fc7-4941-9ce8-2717cf1217d8.jpg";
 import gallerySkin from "/5fef4bdd-0e22-42d1-9a36-6b7cd4ae9a1c.jpg";
 import galleryScalp from "/7d38846f-5dd7-4cbf-9577-7561fb56fefb.jpg";

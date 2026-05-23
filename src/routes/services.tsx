@@ -97,12 +97,14 @@ function ServicesPage() {
                       <p className="text-sm font-medium">{s.price}</p>
                     </div>
                     <div className="col-span-6 md:col-span-2 text-right">
-                      <Link
-                        to="/booking"
+                      <a
+                        href={VAGARO_BOOKING_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors"
                       >
                         Book →
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 ))}

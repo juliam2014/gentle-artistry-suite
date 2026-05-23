@@ -8,7 +8,7 @@ import productSerum from "@/assets/product-serum.jpg";
 import productShampoo from "@/assets/product-shampoo.jpg";
 import productBrush from "@/assets/product-brush.jpg";
 import productCream from "@/assets/product-cream.jpg";
-import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
+import juliaEditorial1 from "@/assets/julia-about.jpg";
 
 import salonSpace1 from "@/assets/salon-space-1.jpg";
 import salonSpace2 from "@/assets/salon-space-2.jpg";

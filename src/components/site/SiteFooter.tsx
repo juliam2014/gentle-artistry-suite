@@ -15,6 +15,7 @@ export function SiteFooter() {
               <a href="#" className="text-foreground/40 hover:text-accent transition-colors uppercase tracking-luxe text-[10px]">Instagram</a>
               <a href="#" className="text-foreground/40 hover:text-accent transition-colors uppercase tracking-luxe text-[10px]">TikTok</a>
               <a href="#" className="text-foreground/40 hover:text-accent transition-colors uppercase tracking-luxe text-[10px]">Pinterest</a>
+              <a href="https://juliabuildsfreedom.com" target="_blank" rel="noopener noreferrer" className="text-foreground/40 hover:text-accent transition-colors uppercase tracking-luxe text-[10px]">Email List</a>
             </div>
           </div>
 

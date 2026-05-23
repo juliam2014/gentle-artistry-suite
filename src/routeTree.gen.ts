@@ -19,11 +19,9 @@ import { Route as EducationRouteImport } from './routes/education'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookingRouteImport } from './routes/booking'
 import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
-import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -78,11 +76,6 @@ const BlondingSpecialistSpringHillTnRoute =
     path: '/blonding-specialist-spring-hill-tn',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const BalayageSpringHillTnRoute = BalayageSpringHillTnRouteImport.update({
   id: '/balayage-spring-hill-tn',
   path: '/balayage-spring-hill-tn',
@@ -98,17 +91,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => BlogRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -119,13 +106,11 @@ export interface FileRoutesByFullPath {
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/$slug': typeof BlogSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -136,14 +121,12 @@ export interface FileRoutesByTo {
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/$slug': typeof BlogSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -154,7 +137,6 @@ export interface FileRoutesById {
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/$slug': typeof BlogSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -162,7 +144,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -173,13 +154,11 @@ export interface FileRouteTypes {
     | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/sitemap.xml'
-    | '/blog/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -190,13 +169,11 @@ export interface FileRouteTypes {
     | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/sitemap.xml'
-    | '/blog/$slug'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -207,14 +184,12 @@ export interface FileRouteTypes {
     | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/sitemap.xml'
-    | '/blog/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BalayageSpringHillTnRoute: typeof BalayageSpringHillTnRoute
-  BlogRoute: typeof BlogRouteWithChildren
   BlondingSpecialistSpringHillTnRoute: typeof BlondingSpecialistSpringHillTnRoute
   BookingRoute: typeof BookingRoute
   ContactRoute: typeof ContactRoute
@@ -299,13 +274,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlondingSpecialistSpringHillTnRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/balayage-spring-hill-tn': {
       id: '/balayage-spring-hill-tn'
       path: '/balayage-spring-hill-tn'
@@ -327,31 +295,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof BlogRoute
-    }
   }
 }
-
-interface BlogRouteChildren {
-  BlogSlugRoute: typeof BlogSlugRoute
-}
-
-const BlogRouteChildren: BlogRouteChildren = {
-  BlogSlugRoute: BlogSlugRoute,
-}
-
-const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BalayageSpringHillTnRoute: BalayageSpringHillTnRoute,
-  BlogRoute: BlogRouteWithChildren,
   BlondingSpecialistSpringHillTnRoute: BlondingSpecialistSpringHillTnRoute,
   BookingRoute: BookingRoute,
   ContactRoute: ContactRoute,
@@ -367,3 +317,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

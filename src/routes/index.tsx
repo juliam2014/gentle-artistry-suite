@@ -47,12 +47,6 @@ const testimonials = [
   },
   {
     quote:
-      "Everything about my experience at 931 beauty co was phenomenal! From the minute I walked in the door, the aesthetic and ambience was beautiful, warm and welcoming. And so were the people! I'm 34, and I don't think I have ever had as wonderful a salon experience, ever! Julia was wonderful! She took her time talking to me and helping me decide what I wanted, and she made it come to life. So personable, kind, AND professional!",
-    name: "Paige Werner",
-    detail: "Columbia, TN",
-  },
-  {
-    quote:
       "Julia did a phenomenal job making me feel right at home. She really understood my hair type, what I wanted done, and executed to perfection! Cannot wait for my next appointment!",
     name: "Julia Mack",
     detail: "Columbia, TN",
@@ -68,12 +62,6 @@ const testimonials = [
       "Not just another beauty salon — awesome, clean, convenient, professional services. Julia was fantastic, and I'm so excited to have access to such a talented, skilled resource so close to my home.",
     name: "J.S.",
     detail: "Columbia, TN",
-  },
-  {
-    quote:
-      "Julia is so sweet and really listened in my extension consult. Gave great and relatable feedback. Looking forward to our install appointment!",
-    name: "T.J.",
-    detail: "Nashville, TN",
   },
 ];
 

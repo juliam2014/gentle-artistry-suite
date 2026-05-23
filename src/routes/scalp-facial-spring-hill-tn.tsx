@@ -75,6 +75,7 @@ export const Route = createFileRoute("/scalp-facial-spring-hill-tn")({
         { to: "/luxury-hair-salon-spring-hill-tn", label: "Luxury Hair Salon" },
         { to: "/balayage-spring-hill-tn", label: "Balayage" },
         { to: "/hair-and-esthetic-services-spring-hill-tn", label: "Hair + Esthetic Services" },
+        { to: "/blog", label: "Scalp Health Articles" },
       ]}
     />
   ),

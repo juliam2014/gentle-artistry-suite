@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Newsletter } from "@/components/site/Newsletter";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
@@ -24,12 +24,12 @@ export const Route = createFileRoute("/education")({
 });
 
 const articles = [
-  { title: "The Foundation of Hair Growth Starts at the Scalp", category: "Scalp Health", read: "6 min read", img: galleryScalp },
-  { title: "Building a Slow, Intentional Morning Beauty Ritual", category: "Self-Care", read: "5 min read", img: ritualFlatlay },
-  { title: "How to Style Soft, Lived-in Waves at Home", category: "Hair Styling", read: "8 min read", img: productBrush },
-  { title: "Reading Your Skin: A Gentle Guide to Barrier Health", category: "Skincare", read: "7 min read", img: gallerySkin },
-  { title: "The Quiet Confidence of Showing Up for Yourself", category: "Wellness", read: "4 min read", img: productCream },
-  { title: "Why Your Scalp Needs a Facial Too", category: "Scalp Health", read: "6 min read", img: productSerum },
+  { title: "The Foundation of Hair Growth Starts at the Scalp", category: "Scalp Health", read: "6 min read", img: galleryScalp, slug: "healthy-scalp-equals-healthy-hair" },
+  { title: "Building a Slow, Intentional Morning Beauty Ritual", category: "Self-Care", read: "5 min read", img: ritualFlatlay, slug: "luxury-self-care-habits-for-women" },
+  { title: "How to Style Soft, Lived-in Waves at Home", category: "Hair Styling", read: "8 min read", img: productBrush, slug: "easy-hair-routines-for-busy-moms" },
+  { title: "Reading Your Skin: A Gentle Guide to Barrier Health", category: "Skincare", read: "7 min read", img: gallerySkin, slug: "how-often-should-you-wash-your-hair" },
+  { title: "The Quiet Confidence of Showing Up for Yourself", category: "Wellness", read: "4 min read", img: productCream, slug: "luxury-self-care-habits-for-women" },
+  { title: "Why Your Scalp Needs a Facial Too", category: "Scalp Health", read: "6 min read", img: productSerum, slug: "signs-you-need-a-scalp-facial" },
 ];
 
 const products = [
@@ -50,7 +50,12 @@ function EducationPage() {
       <section className="px-6 lg:px-8 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
           {articles.map((a) => (
-            <article key={a.title} className="group cursor-pointer">
+            <Link
+              key={a.title}
+              to="/blog/$slug"
+              params={{ slug: a.slug }}
+              className="group cursor-pointer block"
+            >
               <div className="aspect-[4/5] overflow-hidden bg-beige/40">
                 <img
                   src={a.img}
@@ -65,8 +70,9 @@ function EducationPage() {
                   <span>{a.read}</span>
                 </div>
                 <h3 className="font-serif text-2xl leading-snug group-hover:text-accent transition-colors">{a.title}</h3>
+                <p className="text-[11px] uppercase tracking-luxe text-accent pt-2">Read →</p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

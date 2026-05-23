@@ -75,6 +75,7 @@ export const Route = createFileRoute("/blonding-specialist-spring-hill-tn")({
         { to: "/balayage-spring-hill-tn", label: "Balayage in Spring Hill" },
         { to: "/luxury-hair-salon-spring-hill-tn", label: "Luxury Hair Salon" },
         { to: "/scalp-facial-spring-hill-tn", label: "Scalp Facials" },
+        { to: "/blog", label: "Blonding Education" },
       ]}
     />
   ),

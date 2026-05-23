@@ -22,7 +22,7 @@ export function SiteFooter() {
             <p className="text-[11px] uppercase tracking-luxe mb-6 font-semibold">Visit</p>
             <ul className="space-y-3 text-sm text-foreground/60 leading-relaxed">
               <li>2910 Buckner Lane<br />Spring Hill, TN 37174</li>
-              <li className="pt-3 text-foreground/50">Tue — Sat<br />10:00 — 18:00</li>
+              <li className="pt-3 text-foreground/50">Mon — Fri<br />9:00 — 3:30</li>
             </ul>
           </div>
 

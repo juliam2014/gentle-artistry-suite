@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/julia-marks-logo.jpeg";
 
 export function SiteFooter() {
   return (
@@ -6,7 +7,9 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24">
           <div className="md:col-span-2">
-            <p className="font-serif italic text-4xl mb-6">Julia Marks Beauty</p>
+            <p className="font-serif italic text-4xl mb-4">Julia Marks Beauty</p>
+            <img src={logo} alt="Julia Marks Beauty logo" className="w-32 h-auto mb-6" />
+
             <p className="max-w-xs text-foreground/60 text-sm leading-relaxed mb-8">
               Cultivating confidence through intentional beauty, scalp health, and
               educational wellness practices.

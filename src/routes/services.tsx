@@ -167,7 +167,7 @@ const estheticPackages = [
   {
     icon: "👁️",
     title: "Lifted Eyes Package",
-    price: "$90–$125",
+    price: "$115",
     tagline: "Mascara-free, lifted, and darker lashes",
     includes: ["Lash lift", "Lash tint"],
     bestFor: "Clients wanting long-lasting curl and eye definition without makeup.",

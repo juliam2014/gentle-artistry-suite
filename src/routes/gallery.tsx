@@ -7,6 +7,7 @@ import gallerySkin from "@/assets/gallery-skin.jpg";
 import galleryScalp from "@/assets/gallery-scalp.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 import productBrush from "@/assets/product-brush.jpg";
+import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -27,6 +28,7 @@ export const Route = createFileRoute("/gallery")({
 const categories = ["All", "Blonding", "Brunettes", "Scalp", "Styling", "Skin"];
 
 const items = [
+  { cat: "Styling", img: juliaEditorial1, label: "Editorial — Julia" },
   { cat: "Blonding", img: galleryBlonde, label: "Honey Balayage" },
   { cat: "Brunettes", img: galleryBrunette, label: "Dimensional Brunette" },
   { cat: "Scalp", img: galleryScalp, label: "Scalp Detox" },

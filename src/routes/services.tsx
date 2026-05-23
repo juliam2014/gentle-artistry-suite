@@ -108,28 +108,43 @@ const appointments = [
 
 const scalpAddons = [
   {
+    icon: "✨",
+    title: "Fresh Start Scalp Reset",
+    price: "$45–$55",
+    tagline: "For a clean, light, refreshed scalp feeling",
+    removes: ["dry shampoo", "oils", "styling products"],
+    includes: [],
+    benefits: [
+      "Hair feels lighter at the root",
+      "Scalp feels clean + refreshed",
+      "Best before color or blonding services",
+    ],
+  },
+  {
     icon: "💆‍♀️",
-    title: "Express Scalp Detox",
-    price: "$55",
-    tagline: "Clarifying cleanse for product buildup + oil balance",
-    includes: ["Scalp analysis", "Exfoliating cleanse", "Balancing serum", "Scalp massage"],
-    bestFor: "Clients with product buildup, oily scalp, or anyone wanting a fresh foundation before color.",
+    title: "Luxury Shampoo Experience",
+    price: "$15–$25",
+    tagline: "Extra time to relax during your wash",
+    removes: [],
+    includes: ["extended scalp massage", "slow, relaxing shampoo service", "tension relief + stress release"],
+    benefits: [
+      "Instant client favorite",
+      "Easiest add-on to sell",
+      "Turns a shampoo into a mini spa moment",
+    ],
   },
   {
     icon: "🌱",
-    title: "Growth Support Scalp Treatment",
-    price: "$75",
-    tagline: "Stimulate circulation + support stronger hair growth",
-    includes: ["Scalp analysis", "Growth-stimulating massage", "Customized growth tonic", "LED therapy"],
-    bestFor: "Clients experiencing thinning, slow growth, or postpartum shedding who want to support hair density.",
-  },
-  {
-    icon: "🧖‍♀️",
-    title: "Post-Color Scalp Soothe",
-    price: "$45",
-    tagline: "Calm + hydrate the scalp after lightening or color",
-    includes: ["Soothing scalp mask", "Hydrating serum", "Cooling massage", "Protection finish"],
-    bestFor: "Clients with sensitive scalps or anyone who experiences dryness or irritation after color services.",
+    title: "Healthy Hair Growth Boost",
+    price: "$25–$35",
+    tagline: "For stronger, fuller-looking hair over time",
+    removes: [],
+    includes: ["stimulating scalp treatment", "circulation-focused massage", "nourishing application"],
+    benefits: [
+      "Supports healthy growth",
+      "Great for postpartum, stress shedding, or thinning concerns",
+      "Feels like “hair care investment” not a service",
+    ],
   },
 ];
 

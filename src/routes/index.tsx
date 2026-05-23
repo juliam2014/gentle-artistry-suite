@@ -72,12 +72,14 @@ function Index() {
             natural confidence.
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4 animate-fade-up [animation-delay:400ms]">
-            <Link
-              to="/booking"
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
             >
               Book Appointment
-            </Link>
+            </a>
             <Link
               to="/shop"
               className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"

@@ -2,10 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
 import { VAGARO_BOOKING_URL } from "@/lib/booking";
 import ritualFlatlay from "/c5d59189-5d6f-42dc-9c22-50637e67019f.jpg";
-import productSerum from "@/assets/product-serum.jpg";
-import productShampoo from "@/assets/product-shampoo.jpg";
-import productBrush from "@/assets/product-brush.jpg";
-import productCream from "@/assets/product-cream.jpg";
 import juliaEditorial1 from "/7e0fe5a7-9a54-4e9a-89fa-683b4a18d3ed.jpg";
 import salonSpace1 from "@/assets/salon-space-1.jpg";
 import salonSpace2 from "@/assets/salon-space-2.jpg";
@@ -41,12 +37,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const featuredProducts = [
-  { name: "Revitalizing Root Serum", category: "Scalp Care", price: "$64", img: productSerum },
-  { name: "Botanical Fusion Wash", category: "Cleanse", price: "$48", img: productShampoo },
-  { name: "Scalp Stimulating Brush", category: "Tool", price: "$32", img: productBrush },
-  { name: "Whipped Dew Barrier Cream", category: "Radiance", price: "$72", img: productCream },
-];
 
 const testimonials = [
   {
@@ -101,12 +91,6 @@ function Index() {
             >
               Book Appointment
             </a>
-            <Link
-              to="/shop"
-              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
-            >
-              Shop Products
-            </Link>
             <Link
               to="/services"
               className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
@@ -364,54 +348,6 @@ function Index() {
           </div>
         </div>
       </section>
-
-      {/* SHOP TEASER */}
-      <section className="py-24 md:py-32 px-6 lg:px-8 bg-foreground text-background">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div className="max-w-md">
-              <span className="text-[11px] uppercase tracking-luxe text-accent block mb-4">
-                The Collection
-              </span>
-              <h2 className="font-serif text-4xl md:text-5xl mb-4">Elevated Essentials</h2>
-              <p className="text-background/60 text-sm leading-relaxed">
-                Professional-grade scalp and hair care, curated for your home ritual.
-              </p>
-            </div>
-            <Link
-              to="/shop"
-              className="text-[11px] uppercase tracking-luxe border-b border-background/30 pb-1 hover:border-background"
-            >
-              Visit the Shop
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {featuredProducts.map((p) => (
-              <Link to="/shop" key={p.name} className="group block">
-                <div className="aspect-[4/5] bg-white/5 overflow-hidden">
-                  <img
-                    src={p.img}
-                    alt={p.name}
-                    width={700}
-                    height={900}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-                <div className="mt-4">
-                  <p className="text-[10px] uppercase tracking-luxe text-background/40">
-                    {p.category}
-                  </p>
-                  <p className="font-serif text-lg mt-1">{p.name}</p>
-                  <p className="text-sm mt-1 text-background/70">{p.price}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
 
       {/* SOCIAL */}
       <section className="py-24 px-6 lg:px-8 bg-beige/40 text-center">

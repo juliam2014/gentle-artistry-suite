@@ -30,7 +30,6 @@ export function SiteFooter() {
             <p className="text-[11px] uppercase tracking-luxe mb-6 font-semibold">Explore</p>
             <ul className="space-y-3 text-sm text-foreground/60">
               <li><Link to="/services" className="hover:text-foreground">Services</Link></li>
-              <li><Link to="/shop" className="hover:text-foreground">Shop</Link></li>
               <li><Link to="/booking" className="hover:text-foreground">Booking</Link></li>
               <li><Link to="/education" className="hover:text-foreground">Education</Link></li>
               <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>

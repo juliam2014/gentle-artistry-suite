@@ -352,7 +352,7 @@ function ServicesPage() {
                     <ul className="space-y-2 text-sm text-foreground/70">
                       {s.benefits.map((b) => (
                         <li key={b} className="flex gap-2">
-                          <span>✔</span>
+                          <span>​</span>
                           <span>{b}</span>
                         </li>
                       ))}

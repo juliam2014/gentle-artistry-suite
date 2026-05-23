@@ -3,7 +3,7 @@ import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-posts";
 
 const TITLE = "Beauty, Hair & Scalp Wellness Blog | Julia Marks Beauty";
 const DESCRIPTION =
-  "Education from a luxury hair, scalp, and esthetic studio in Spring Hill, TN — covering hair care, scalp health, blonding, beauty routines, and feminine self-care.";
+  "Insights from a luxury hair, scalp, and esthetic studio in Spring Hill, TN — covering hair care, scalp health, blonding, beauty routines, and feminine self-care.";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -27,7 +27,7 @@ function BlogIndex() {
           <span className="eyebrow mb-6 block">The Journal</span>
           <h1 className="font-serif font-light text-5xl md:text-7xl leading-[1.05]">
             Beauty, hair & <em className="italic text-accent">scalp wellness</em>{" "}
-            education
+            insights
           </h1>
           <p className="mt-8 max-w-2xl mx-auto text-lg text-foreground/70 leading-relaxed">
             Thoughtful articles, tutorials, and rituals from a luxury beauty studio in

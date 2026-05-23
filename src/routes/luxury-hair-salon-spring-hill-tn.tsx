@@ -42,7 +42,7 @@ export const Route = createFileRoute("/luxury-hair-salon-spring-hill-tn")({
         {
           h2: "Scalp & Hair Health Integrated",
           body:
-            "Luxury isn't just aesthetic — it's intention. Every service is rooted in scalp and hair health, with bond-building, scalp wellness, and personalized education built in.",
+            "Luxury isn't just aesthetic — it's intention. Every service is rooted in scalp and hair health, with bond-building, scalp wellness, and personalized care built in.",
         },
       ]}
       benefits={[

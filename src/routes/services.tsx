@@ -262,7 +262,7 @@ function ServicesPage() {
             <p className="text-foreground/70 max-w-2xl mx-auto leading-relaxed">
               Enhance your hair appointment with quick, high-impact beauty add-ons
               designed to fit seamlessly into your visit. Focused on maintenance, glow,
-              and effortless beauty — not long spa facials.
+              and effortless beauty.
             </p>
           </div>
 

@@ -10,8 +10,6 @@ import productBrush from "@/assets/product-brush.jpg";
 import productCream from "@/assets/product-cream.jpg";
 import juliaEditorial1 from "@/assets/julia-about.jpg";
 
-import salonSpace1 from "@/assets/salon-space-1.jpg";
-import salonSpace2 from "@/assets/salon-space-2.jpg";
 import salonSpace3 from "@/assets/salon-space-3.jpg";
 
 export const Route = createFileRoute("/")({
@@ -190,52 +188,24 @@ function Index() {
 
       {/* THE STUDIO */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <span className="eyebrow block mb-6">The Studio</span>
             <h2 className="font-serif italic text-4xl md:text-5xl">A space to exhale</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <figure className="space-y-4">
-              <img
-                src={salonSpace1}
-                alt="The lounge area of the studio"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[3/4] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                The Lounge
-              </figcaption>
-            </figure>
-            <figure className="space-y-4">
-              <img
-                src={salonSpace2}
-                alt="The styling chair and mirror"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[3/4] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                The Chair
-              </figcaption>
-            </figure>
-            <figure className="space-y-4">
-              <img
-                src={salonSpace3}
-                alt="The shampoo and wash station"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[3/4] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                The Wash
-              </figcaption>
-            </figure>
-          </div>
+          <figure className="space-y-4">
+            <img
+              src={salonSpace3}
+              alt="The shampoo and wash station"
+              width={800}
+              height={1000}
+              loading="lazy"
+              className="w-full aspect-[3/4] object-cover"
+            />
+            <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50 text-center">
+              The Wash
+            </figcaption>
+          </figure>
         </div>
       </section>
 

@@ -105,14 +105,6 @@ function EducationPage() {
             ))}
           </div>
 
-          <div className="text-center mt-16">
-            <Link
-              to="/shop"
-              className="inline-block bg-foreground text-background px-10 py-4 text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
-            >
-              Explore All Digital Products
-            </Link>
-          </div>
         </div>
       </section>
 

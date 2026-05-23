@@ -7,6 +7,7 @@ import gallerySkin from "@/assets/gallery-skin.jpg";
 import galleryScalp from "@/assets/gallery-scalp.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 import productBrush from "@/assets/product-brush.jpg";
+import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({

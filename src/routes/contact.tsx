@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Visit the studio in Austin, Texas. Hours, contact form, FAQ, and booking inquiries.",
+          "Visit the studio in Spring Hill, TN. Hours, contact form, FAQ, and booking inquiries.",
       },
       { property: "og:title", content: "Contact — Julia Marks Beauty" },
     ],
@@ -96,8 +96,8 @@ function ContactPage() {
             <div>
               <p className="eyebrow mb-3">The Studio</p>
               <p className="font-serif text-2xl leading-snug">
-                1242 Serenity Lane<br />
-                Austin, Texas 78701
+                2910 Buckner Lane<br />
+                Spring Hill, TN 37174
               </p>
             </div>
             <div>

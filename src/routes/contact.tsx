@@ -110,7 +110,7 @@ function ContactPage() {
             </div>
             <div>
               <p className="eyebrow mb-3">Contact</p>
-              <p className="text-foreground/70">hello@auraandessence.com</p>
+              <p className="text-foreground/70">hello@juliamarksbeauty.com</p>
               <p className="text-foreground/70">512.555.0198</p>
             </div>
             <div>

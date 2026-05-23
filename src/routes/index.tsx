@@ -79,7 +79,7 @@ function Index() {
             Radiate from <em className="italic text-accent">within</em>
           </h1>
           <p className="mt-8 max-w-xl text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
-            A boutique sanctuary for intentional beauty. We blend advanced scalp
+            A boutique sanctuary for intentional beauty. I blend advanced scalp
             health, customized hair artistry, and holistic skincare to elevate your
             natural confidence.
           </p>

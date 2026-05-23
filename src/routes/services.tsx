@@ -175,7 +175,7 @@ const estheticPackages = [
   {
     icon: "✨",
     title: "Full Face Refresh Package",
-    price: "Lash tint + lift",
+    price: "$145",
     tagline: "Complete eye + brow enhancement in one visit",
     includes: ["Brow shaping", "Brow tint", "Lash lift", "Lash tint"],
     bestFor:

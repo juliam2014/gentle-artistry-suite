@@ -7,8 +7,6 @@ import productShampoo from "@/assets/product-shampoo.jpg";
 import productBrush from "@/assets/product-brush.jpg";
 import productCream from "@/assets/product-cream.jpg";
 import juliaEditorial1 from "@/assets/julia-about.jpg";
-import heroSalon from "@/assets/hero-salon.jpg";
-import heroPortrait from "@/assets/hero-portrait.jpg";
 import salonSpace1 from "@/assets/salon-space-1.jpg";
 import salonSpace2 from "@/assets/salon-space-2.jpg";
 import salonSpace3 from "@/assets/salon-space-3.jpg";
@@ -74,61 +72,6 @@ const testimonials = [
 function Index() {
   return (
     <>
-      {/* HERO */}
-      <section className="pt-32 md:pt-36 pb-20 md:pb-24 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div className="lg:col-span-6 order-2 lg:order-1">
-            <span className="eyebrow mb-6 block animate-fade-in">The Ritual of Being</span>
-            <h1 className="font-serif font-light text-6xl md:text-7xl xl:text-8xl leading-[1.05] text-balance animate-fade-up">
-              Radiate from <em className="italic text-accent">within</em>
-            </h1>
-            <p className="mt-8 max-w-lg text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
-              A boutique sanctuary for intentional beauty. We blend advanced scalp
-              health, customized hair artistry, and holistic skincare to elevate your
-              natural confidence.
-            </p>
-            <div className="mt-12 flex flex-wrap gap-4 animate-fade-up [animation-delay:400ms]">
-              <a
-                href={VAGARO_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
-              >
-                Book Appointment
-              </a>
-              <Link
-                to="/shop"
-                className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
-              >
-                Shop Products
-              </Link>
-              <Link
-                to="/services"
-                className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
-              >
-                Explore Services
-              </Link>
-            </div>
-          </div>
-          <div className="lg:col-span-6 order-1 lg:order-2 grid grid-cols-2 gap-4 md:gap-6">
-            <img
-              src={heroSalon}
-              alt="Luxury hair salon interior in Spring Hill, TN"
-              width={800}
-              height={1000}
-              className="w-full aspect-[4/5] object-cover animate-fade-in"
-            />
-            <img
-              src={heroPortrait}
-              alt="Editorial beauty portrait at Julia Marks Beauty"
-              width={800}
-              height={1000}
-              className="w-full aspect-[4/5] object-cover mt-12 animate-fade-in [animation-delay:200ms]"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* ABOUT JULIA */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -206,6 +149,42 @@ function Index() {
         </div>
       </section>
 
+      {/* HERO */}
+      <section className="pt-40 md:pt-44 pb-20 md:pb-24 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+          <span className="eyebrow mb-6 animate-fade-in">The Ritual of Being</span>
+          <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[15ch]">
+            Radiate from <em className="italic text-accent">within</em>
+          </h1>
+          <p className="mt-8 max-w-xl text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
+            A boutique sanctuary for intentional beauty. We blend advanced scalp
+            health, customized hair artistry, and holistic skincare to elevate your
+            natural confidence.
+          </p>
+          <div className="mt-12 flex flex-wrap justify-center gap-4 animate-fade-up [animation-delay:400ms]">
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
+            >
+              Book Appointment
+            </a>
+            <Link
+              to="/shop"
+              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
+            >
+              Shop Products
+            </Link>
+            <Link
+              to="/services"
+              className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
+            >
+              Explore Services
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* PHILOSOPHY / PILLARS */}
       <section className="py-24 md:py-32 px-6 lg:px-8 bg-beige/40">

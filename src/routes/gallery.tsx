@@ -26,20 +26,18 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-const categories = ["All", "Blonding", "Brunettes", "Scalp", "Styling", "Skin"];
-
 const items = [
-  { cat: "Styling", img: juliaEditorial1, label: "Editorial — Julia" },
-  { cat: "Styling", img: juliaEditorial2, label: "Behind the Chair" },
-  { cat: "Blonding", img: galleryBlonde, label: "Honey Balayage" },
-  { cat: "Brunettes", img: galleryBrunette, label: "Dimensional Brunette" },
-  { cat: "Scalp", img: galleryScalp, label: "Scalp Detox" },
-  { cat: "Skin", img: gallerySkin, label: "Glow Facial" },
-  { cat: "Styling", img: productBrush, label: "Finishing Touch" },
-  { cat: "Blonding", img: ritualFlatlay, label: "After Care Ritual" },
-  { cat: "Brunettes", img: galleryBrunette, label: "Soft Mocha" },
-  { cat: "Scalp", img: galleryScalp, label: "Hydration Therapy" },
-  { cat: "Skin", img: gallerySkin, label: "Express Radiance" },
+  { img: juliaEditorial1, label: "Editorial — Julia" },
+  { img: juliaEditorial2, label: "Behind the Chair" },
+  { img: galleryBlonde, label: "Honey Balayage" },
+  { img: galleryBrunette, label: "Dimensional Brunette" },
+  { img: galleryScalp, label: "Scalp Detox" },
+  { img: gallerySkin, label: "Glow Facial" },
+  { img: productBrush, label: "Finishing Touch" },
+  { img: ritualFlatlay, label: "After Care Ritual" },
+  { img: galleryBrunette, label: "Soft Mocha" },
+  { img: galleryScalp, label: "Hydration Therapy" },
+  { img: gallerySkin, label: "Express Radiance" },
 ];
 
 function GalleryPage() {

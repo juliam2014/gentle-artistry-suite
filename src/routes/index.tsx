@@ -8,8 +8,8 @@ import productSerum from "@/assets/product-serum.jpg";
 import productShampoo from "@/assets/product-shampoo.jpg";
 import productBrush from "@/assets/product-brush.jpg";
 import productCream from "@/assets/product-cream.jpg";
-import galleryBlonde from "@/assets/gallery-blonde.jpg";
-import galleryBrunette from "@/assets/gallery-brunette.jpg";
+import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
+import juliaEditorial2 from "@/assets/julia-editorial-2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

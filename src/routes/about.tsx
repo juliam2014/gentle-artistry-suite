@@ -33,7 +33,7 @@ function AboutPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
           <img
             src={aboutPortrait}
-            alt="Founder of Julia Marks Beauty in her boutique studio"
+            alt="Founder Julia Marks in her boutique studio"
             width={900}
             height={1200}
             loading="lazy"
@@ -42,7 +42,7 @@ function AboutPage() {
           <div className="space-y-6">
             <span className="eyebrow block">The Founder</span>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              Hi, I'm <em className="italic text-accent">Ava.</em>
+              Hi, I'm <em className="italic text-accent">Julia.</em>
             </h2>
             <p className="text-foreground/70 leading-relaxed">
               I'm a licensed beauty professional, a mother, and a quiet

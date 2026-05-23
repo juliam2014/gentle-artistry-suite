@@ -65,26 +65,84 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const LOCAL_BUSINESS_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  name: "Julia Marks Beauty",
+  image: "/og-image.jpg",
+  description:
+    "Luxury hair, scalp wellness, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Balayage, blonding, scalp facials, and beauty + skincare services.",
+  telephone: "(615) 555-0142",
+  email: "hello@juliamarksbeauty.com",
+  priceRange: "$$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1010 Crossings Blvd, Suite 200",
+    addressLocality: "Spring Hill",
+    addressRegion: "TN",
+    postalCode: "37174",
+    addressCountry: "US",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 35.7512, longitude: -86.93 },
+  areaServed: [
+    { "@type": "City", name: "Spring Hill, TN" },
+    { "@type": "City", name: "Franklin, TN" },
+    { "@type": "City", name: "Columbia, TN" },
+    { "@type": "City", name: "Nashville, TN" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  makesOffer: [
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Balayage" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Blonding" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Scalp Facial" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dermaplane Facial" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Brow & Lash Tint" } },
+  ],
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Julia Marks Beauty — Luxury Beauty, Hair & Scalp Wellness Studio" },
+      {
+        title:
+          "Julia Marks Beauty | Luxury Hair Salon & Scalp Wellness in Spring Hill, TN",
+      },
       {
         name: "description",
         content:
-          "A boutique sanctuary for hair, scalp health, and skincare — helping women feel confident, feminine, and radiantly cared for.",
+          "Luxury hair salon, balayage and blonding specialist, and scalp wellness studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville.",
       },
       { name: "author", content: "Julia Marks Beauty" },
-      { property: "og:title", content: "Julia Marks Beauty — Luxury Beauty Studio" },
+      {
+        name: "keywords",
+        content:
+          "luxury hair salon Spring Hill TN, balayage specialist, blonding specialist, scalp facial, scalp wellness, dimensional color, lived-in blonde hair, brunette balayage, healthy hair salon, hair color specialist, dermaplane facial, brow tint, lash tint, Franklin TN, Columbia TN, Nashville TN",
+      },
+      {
+        property: "og:title",
+        content: "Julia Marks Beauty | Luxury Hair & Scalp Wellness in Spring Hill, TN",
+      },
       {
         property: "og:description",
         content:
-          "Hair artistry, scalp wellness, skincare, and self-care education in a boutique sanctuary.",
+          "Hair artistry, scalp wellness, and esthetic services in a boutique sanctuary serving Spring Hill, Franklin, Columbia, and Nashville, TN.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:site_name", content: "Julia Marks Beauty" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "geo.region", content: "US-TN" },
+      { name: "geo.placename", content: "Spring Hill, Tennessee" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -93,6 +151,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(LOCAL_BUSINESS_JSONLD),
       },
     ],
   }),

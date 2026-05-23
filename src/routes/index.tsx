@@ -16,16 +16,29 @@ import salonSpace3 from "@/assets/salon-space-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Julia Marks Beauty — Luxury Beauty, Hair & Scalp Wellness" },
+      {
+        title:
+          "Luxury Hair Salon & Scalp Wellness in Spring Hill, TN | Julia Marks Beauty",
+      },
       {
         name: "description",
         content:
-          "Boutique luxury salon and wellness studio for hair, scalp health, skincare, and intentional self-care.",
+          "Boutique luxury hair salon, balayage & blonding specialist, and scalp wellness studio in Spring Hill, TN. Serving Franklin, Columbia & Nashville with custom dimensional color, scalp facials, and luxury esthetic services.",
       },
-      { property: "og:title", content: "Julia Marks Beauty — Luxury Beauty Studio" },
+      {
+        property: "og:title",
+        content: "Luxury Hair Salon & Scalp Wellness | Spring Hill, TN",
+      },
+      {
+        property: "og:description",
+        content:
+          "Custom balayage, blonding, scalp facials, and beauty services in Spring Hill, TN.",
+      },
       { property: "og:image", content: heroSalon },
+      { property: "og:url", content: "/" },
       { name: "twitter:image", content: heroSalon },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });

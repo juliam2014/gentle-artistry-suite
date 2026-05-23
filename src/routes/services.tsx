@@ -193,7 +193,7 @@ const estheticPackages = [
   {
     icon: "💖",
     title: "Signature Maintenance Stack",
-    price: "$95–$145",
+    price: "$197",
     tagline: "Your routine maintenance beauty reset",
     includes: ["Brow shaping + tint", "Lash tint", "Express dermaplane"],
     bestFor:

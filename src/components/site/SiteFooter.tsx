@@ -12,7 +12,7 @@ export function SiteFooter() {
 
             <p className="max-w-xs text-foreground/60 text-sm leading-relaxed mb-8">
               Cultivating confidence through intentional beauty, scalp health, and
-              educational wellness practices.
+              holistic wellness practices.
             </p>
             <div className="flex gap-6">
               <a href="https://www.instagram.com/julia_marks_beauty/" target="_blank" rel="noopener noreferrer" className="text-foreground/40 hover:text-accent transition-colors uppercase tracking-luxe text-[10px]">Instagram</a>

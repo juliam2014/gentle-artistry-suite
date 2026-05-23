@@ -115,7 +115,7 @@ function ContactPage() {
             <div>
               <p className="eyebrow mb-3">Social</p>
               <div className="flex gap-6 text-[11px] uppercase tracking-luxe">
-                <a href="#" className="border-b border-foreground/20 hover:border-foreground pb-1">Instagram</a>
+                <a href="https://www.instagram.com/julia_marks_beauty/" target="_blank" rel="noopener noreferrer" className="border-b border-foreground/20 hover:border-foreground pb-1">Instagram</a>
                 <a href="#" className="border-b border-foreground/20 hover:border-foreground pb-1">TikTok</a>
                 <a href="#" className="border-b border-foreground/20 hover:border-foreground pb-1">Pinterest</a>
               </div>

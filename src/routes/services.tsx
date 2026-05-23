@@ -108,28 +108,43 @@ const appointments = [
 
 const scalpAddons = [
   {
+    icon: "✨",
+    title: "Fresh Start Scalp Reset",
+    price: "$45–$55",
+    tagline: "For a clean, light, refreshed scalp feeling",
+    removes: ["dry shampoo", "oils", "styling products"],
+    includes: [],
+    benefits: [
+      "Hair feels lighter at the root",
+      "Scalp feels clean + refreshed",
+      "Best before color or blonding services",
+    ],
+  },
+  {
     icon: "💆‍♀️",
-    title: "Express Scalp Detox",
-    price: "$55",
-    tagline: "Clarifying cleanse for product buildup + oil balance",
-    includes: ["Scalp analysis", "Exfoliating cleanse", "Balancing serum", "Scalp massage"],
-    bestFor: "Clients with product buildup, oily scalp, or anyone wanting a fresh foundation before color.",
+    title: "Luxury Shampoo Experience",
+    price: "$15–$25",
+    tagline: "Extra time to relax during your wash",
+    removes: [],
+    includes: ["extended scalp massage", "slow, relaxing shampoo service", "tension relief + stress release"],
+    benefits: [
+      "Instant client favorite",
+      "Easiest add-on to sell",
+      "Turns a shampoo into a mini spa moment",
+    ],
   },
   {
     icon: "🌱",
-    title: "Growth Support Scalp Treatment",
-    price: "$75",
-    tagline: "Stimulate circulation + support stronger hair growth",
-    includes: ["Scalp analysis", "Growth-stimulating massage", "Customized growth tonic", "LED therapy"],
-    bestFor: "Clients experiencing thinning, slow growth, or postpartum shedding who want to support hair density.",
-  },
-  {
-    icon: "🧖‍♀️",
-    title: "Post-Color Scalp Soothe",
-    price: "$45",
-    tagline: "Calm + hydrate the scalp after lightening or color",
-    includes: ["Soothing scalp mask", "Hydrating serum", "Cooling massage", "Protection finish"],
-    bestFor: "Clients with sensitive scalps or anyone who experiences dryness or irritation after color services.",
+    title: "Healthy Hair Growth Boost",
+    price: "$25–$35",
+    tagline: "For stronger, fuller-looking hair over time",
+    removes: [],
+    includes: ["stimulating scalp treatment", "circulation-focused massage", "nourishing application"],
+    benefits: [
+      "Supports healthy growth",
+      "Great for postpartum, stress shedding, or thinning concerns",
+      "Feels like “hair care investment” not a service",
+    ],
   },
 ];
 
@@ -282,13 +297,10 @@ function ServicesPage() {
       <section className="px-6 lg:px-8 pb-24 md:pb-32 bg-beige/30">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 pt-20">
-            <span className="eyebrow block mb-4">Scalp Add-Ons</span>
+            <span className="eyebrow block mb-4">Scalp + Shampoo Upgrades</span>
             <h2 className="font-serif italic text-4xl md:text-5xl leading-tight mb-5">
-              Treat your scalp like skin.
+              Elevate your wash experience.
             </h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-              Add a scalp treatment to any color service for deeper cleansing, better product absorption, and a truly elevated self-care experience.
-            </p>
           </div>
 
           <div className="space-y-10">
@@ -309,22 +321,42 @@ function ServicesPage() {
                 </header>
 
                 <div className="grid md:grid-cols-2 gap-8">
+                  {s.removes.length > 1 && (
+                    <div>
+                      <p className="eyebrow mb-3">Removes buildup from</p>
+                      <ul className="space-y-2 text-sm text-foreground/70">
+                        {s.removes.map((r) => (
+                          <li key={r} className="flex gap-2">
+                            <span className="text-accent">—</span>
+                            <span>{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {s.includes.length > 0 && (
+                    <div>
+                      <p className="eyebrow mb-3">Includes</p>
+                      <ul className="space-y-2 text-sm text-foreground/70">
+                        {s.includes.map((i) => (
+                          <li key={i} className="flex gap-2">
+                            <span className="text-accent">—</span>
+                            <span>{i}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                   <div>
-                    <p className="eyebrow mb-3">Includes</p>
+                    <p className="eyebrow mb-3">Benefits</p>
                     <ul className="space-y-2 text-sm text-foreground/70">
-                      {s.includes.map((i) => (
-                        <li key={i} className="flex gap-2">
-                          <span className="text-accent">—</span>
-                          <span>{i}</span>
+                      {s.benefits.map((b) => (
+                        <li key={b} className="flex gap-2">
+                          <span>✔</span>
+                          <span>{b}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
-                  <div>
-                    <p className="eyebrow mb-3">Best for</p>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      {s.bestFor}
-                    </p>
                   </div>
                 </div>
 

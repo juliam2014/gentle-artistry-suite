@@ -50,7 +50,12 @@ function EducationPage() {
       <section className="px-6 lg:px-8 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
           {articles.map((a) => (
-            <article key={a.title} className="group cursor-pointer">
+            <Link
+              key={a.title}
+              to="/blog/$slug"
+              params={{ slug: a.slug }}
+              className="group cursor-pointer block"
+            >
               <div className="aspect-[4/5] overflow-hidden bg-beige/40">
                 <img
                   src={a.img}
@@ -64,10 +69,10 @@ function EducationPage() {
                   <span>{a.category}</span>
                   <span>{a.read}</span>
                 </div>
-                <h3 className="font-serif text-2xl leading-snug">{a.title}</h3>
+                <h3 className="font-serif text-2xl leading-snug group-hover:text-accent transition-colors">{a.title}</h3>
                 <p className="text-[11px] uppercase tracking-luxe text-accent pt-2">Read →</p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

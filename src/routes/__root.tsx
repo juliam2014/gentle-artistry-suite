@@ -70,14 +70,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aura & Essence — Luxury Beauty, Hair & Scalp Wellness Studio" },
+      { title: "Julia Marks Beauty — Luxury Beauty, Hair & Scalp Wellness Studio" },
       {
         name: "description",
         content:
           "A boutique sanctuary for hair, scalp health, and skincare — helping women feel confident, feminine, and radiantly cared for.",
       },
-      { name: "author", content: "Aura & Essence" },
-      { property: "og:title", content: "Aura & Essence — Luxury Beauty Studio" },
+      { name: "author", content: "Julia Marks Beauty" },
+      { property: "og:title", content: "Julia Marks Beauty — Luxury Beauty Studio" },
       {
         property: "og:description",
         content:

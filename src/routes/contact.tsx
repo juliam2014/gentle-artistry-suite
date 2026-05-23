@@ -5,13 +5,13 @@ import { PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Aura & Essence" },
+      { title: "Contact — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Visit the studio in Austin, Texas. Hours, contact form, FAQ, and booking inquiries.",
       },
-      { property: "og:title", content: "Contact — Aura & Essence" },
+      { property: "og:title", content: "Contact — Julia Marks Beauty" },
     ],
   }),
   component: ContactPage,
@@ -128,7 +128,7 @@ function ContactPage() {
         <div className="max-w-6xl mx-auto mt-20">
           <div className="aspect-[16/7] overflow-hidden border border-foreground/10">
             <iframe
-              title="Aura & Essence Studio Location"
+              title="Julia Marks Beauty Studio Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27583.55!2d-97.7431!3d30.2672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE2JzAyLjAiTiA5N8KwNDQnMzUuMiJX!5e0!3m2!1sen!2sus!4v1700000000000"
               className="w-full h-full grayscale"
               loading="lazy"

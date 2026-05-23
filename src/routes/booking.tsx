@@ -5,13 +5,13 @@ import { PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/booking")({
   head: () => ({
     meta: [
-      { title: "Book — Aura & Essence" },
+      { title: "Book — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Reserve your appointment online. View availability, select services, and receive automated confirmations.",
       },
-      { property: "og:title", content: "Book Your Visit — Aura & Essence" },
+      { property: "og:title", content: "Book Your Visit — Julia Marks Beauty" },
     ],
   }),
   component: BookingPage,

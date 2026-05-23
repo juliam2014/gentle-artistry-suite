@@ -11,13 +11,13 @@ import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
-      { title: "Shop — Aura & Essence" },
+      { title: "Shop — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Professional-grade haircare, scalp care, skincare, and beauty tools. Curated bundles, subscriptions, and digital guides.",
       },
-      { property: "og:title", content: "Shop — Aura & Essence" },
+      { property: "og:title", content: "Shop — Julia Marks Beauty" },
       { property: "og:image", content: productSerum },
     ],
   }),

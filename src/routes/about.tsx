@@ -7,13 +7,13 @@ import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Aura & Essence" },
+      { title: "About — Julia Marks Beauty" },
       {
         name: "description",
         content:
-          "Meet the founder of Aura & Essence — a beauty professional and mother passionate about helping women feel confident, radiant, and cared for.",
+          "Meet the founder of Julia Marks Beauty — a beauty professional and mother passionate about helping women feel confident, radiant, and cared for.",
       },
-      { property: "og:title", content: "About — Aura & Essence" },
+      { property: "og:title", content: "About — Julia Marks Beauty" },
       { property: "og:image", content: aboutPortrait },
     ],
   }),
@@ -33,7 +33,7 @@ function AboutPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
           <img
             src={aboutPortrait}
-            alt="Founder of Aura & Essence in her boutique studio"
+            alt="Founder of Julia Marks Beauty in her boutique studio"
             width={900}
             height={1200}
             loading="lazy"
@@ -47,7 +47,7 @@ function AboutPage() {
             <p className="text-foreground/70 leading-relaxed">
               I'm a licensed beauty professional, a mother, and a quiet
               perfectionist who believes that real luxury is feeling fully cared for.
-              Aura & Essence began in a small corner of my home, where friends would
+              Julia Marks Beauty began in a small corner of my home, where friends would
               come for color, conversation, and the kind of confidence boost only a
               good hair day can give.
             </p>

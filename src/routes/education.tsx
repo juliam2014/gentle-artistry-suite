@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Newsletter } from "@/components/site/Newsletter";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";

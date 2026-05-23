@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/julia-marks-logo.jpeg";
+import logo from "@/assets/julia-marks-logo.png";
 
 export function SiteFooter() {
   return (

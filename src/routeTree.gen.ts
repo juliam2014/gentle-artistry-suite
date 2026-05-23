@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ShopRouteImport } from './routes/shop'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-facial-spring-hill-tn'
 import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
@@ -29,11 +28,6 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ShopRoute = ShopRouteImport.update({
-  id: '/shop',
-  path: '/shop',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -124,7 +118,6 @@ export interface FileRoutesByFullPath {
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
-  '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
@@ -142,7 +135,6 @@ export interface FileRoutesByTo {
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
-  '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
@@ -161,7 +153,6 @@ export interface FileRoutesById {
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
-  '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
@@ -181,7 +172,6 @@ export interface FileRouteTypes {
     | '/luxury-hair-salon-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/services'
-    | '/shop'
     | '/sitemap.xml'
     | '/blog/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -199,7 +189,6 @@ export interface FileRouteTypes {
     | '/luxury-hair-salon-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/services'
-    | '/shop'
     | '/sitemap.xml'
     | '/blog/$slug'
   id:
@@ -217,7 +206,6 @@ export interface FileRouteTypes {
     | '/luxury-hair-salon-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/services'
-    | '/shop'
     | '/sitemap.xml'
     | '/blog/$slug'
   fileRoutesById: FileRoutesById
@@ -236,7 +224,6 @@ export interface RootRouteChildren {
   LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
   ScalpFacialSpringHillTnRoute: typeof ScalpFacialSpringHillTnRoute
   ServicesRoute: typeof ServicesRoute
-  ShopRoute: typeof ShopRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -247,13 +234,6 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/shop': {
-      id: '/shop'
-      path: '/shop'
-      fullPath: '/shop'
-      preLoaderRoute: typeof ShopRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -382,9 +362,18 @@ const rootRouteChildren: RootRouteChildren = {
   LuxuryHairSalonSpringHillTnRoute: LuxuryHairSalonSpringHillTnRoute,
   ScalpFacialSpringHillTnRoute: ScalpFacialSpringHillTnRoute,
   ServicesRoute: ServicesRoute,
-  ShopRoute: ShopRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

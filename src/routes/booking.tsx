@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
 import { VAGARO_BOOKING_URL } from "@/lib/booking";
+import salonSpace1 from "@/assets/salon-space-1.jpg";
+import salonSpace2 from "@/assets/salon-space-2.jpg";
+import salonSpace3 from "@/assets/salon-space-3.jpg";
 
 export const Route = createFileRoute("/booking")({
   head: () => ({
@@ -65,6 +68,43 @@ function BookingPage() {
                 juliamarksbeauty@gmail.com
               </a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 lg:px-8 pb-32">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <p className="eyebrow">The Studio</p>
+            <h2 className="font-serif italic text-3xl md:text-5xl leading-tight">
+              A quiet, intentional space.
+            </h2>
+            <p className="text-foreground/60 max-w-xl mx-auto leading-relaxed">
+              Warm light, soft textures, and a private atmosphere designed for
+              you to slow down and feel cared for.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {[
+              { src: salonSpace1, label: "The Lounge" },
+              { src: salonSpace3, label: "The Chair" },
+              { src: salonSpace2, label: "The Wash" },
+            ].map((p) => (
+              <figure key={p.label} className="space-y-3">
+                <div className="aspect-[3/4] overflow-hidden bg-beige/40">
+                  <img
+                    src={p.src}
+                    alt={`Julia Marks Beauty studio — ${p.label}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-700"
+                  />
+                </div>
+                <figcaption className="eyebrow text-center">
+                  {p.label}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>

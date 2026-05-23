@@ -139,7 +139,7 @@ function Index() {
                 </p>
                 <p>
                   Over the years, I've trained in advanced color techniques, therapeutic scalp care,
-                  and holistic esthetics — but the real magic happens in the connection. I listen.
+                  and holistic esthetics  but the real magic happens in the connection. I listen.
                   I customize. I treat your hair and skin like the living, breathing expressions of you that they are.
                 </p>
                 <p>

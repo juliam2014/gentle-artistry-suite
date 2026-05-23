@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
 import { VAGARO_BOOKING_URL } from "@/lib/booking";
-import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
+import ritualFlatlay from "/c5d59189-5d6f-42dc-9c22-50637e67019f.jpg";
 import productSerum from "@/assets/product-serum.jpg";
 import productShampoo from "@/assets/product-shampoo.jpg";
 import productBrush from "@/assets/product-brush.jpg";

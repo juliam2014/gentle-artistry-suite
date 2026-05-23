@@ -70,13 +70,15 @@ export function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/booking"
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="bg-foreground text-background text-center px-5 py-3 text-[11px] uppercase tracking-luxe font-medium mt-2"
             >
               Book Now
-            </Link>
+            </a>
           </div>
         </div>
       )}

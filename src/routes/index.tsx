@@ -57,12 +57,6 @@ const testimonials = [
     name: "Brittney K.",
     detail: "Returning Client",
   },
-  {
-    quote:
-      "Not just another beauty salon — awesome, clean, convenient, professional services. Julia was fantastic, and I'm so excited to have access to such a talented, skilled resource so close to my home.",
-    name: "J.S.",
-    detail: "Columbia, TN",
-  },
 ];
 
 

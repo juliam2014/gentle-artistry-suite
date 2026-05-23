@@ -184,7 +184,7 @@ const estheticPackages = [
   {
     icon: "🌿",
     title: "Glow Tone Package",
-    price: "$45–$75",
+    price: "$60",
     tagline: "Instant skin smoothing and brightness boost",
     includes: ["Express dermaplane", "Hydration finish"],
     bestFor:

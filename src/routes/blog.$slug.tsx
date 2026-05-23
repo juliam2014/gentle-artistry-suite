@@ -94,7 +94,7 @@ function BlogArticle() {
 
         <section className="py-16 px-6 lg:px-8">
           <div className="max-w-2xl mx-auto space-y-10">
-            {post.body.map((b, i) => (
+            {post.body.map((b: { h2?: string; text: string }, i: number) => (
               <div key={i}>
                 {b.h2 && (
                   <h2 className="font-serif text-2xl md:text-3xl mb-4">{b.h2}</h2>

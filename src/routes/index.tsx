@@ -284,38 +284,38 @@ function Index() {
         </div>
       </section>
 
-      {/* BEFORE/AFTER GALLERY TEASER */}
+      {/* STUDIO PORTRAITS */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="eyebrow block mb-6">Transformations</span>
-            <h2 className="font-serif italic text-4xl md:text-5xl">Real radiance</h2>
+            <span className="eyebrow block mb-6">The Artist</span>
+            <h2 className="font-serif italic text-4xl md:text-5xl">Behind the chair</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <figure className="space-y-4">
               <img
-                src={galleryBlonde}
-                alt="Lived-in honey blonde balayage transformation"
+                src={juliaEditorial1}
+                alt="Julia — editorial portrait in the studio"
                 width={800}
                 height={1000}
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover"
               />
               <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                Blonding & Scalp Therapy
+                Editorial — Julia Marks
               </figcaption>
             </figure>
             <figure className="space-y-4">
               <img
-                src={galleryBrunette}
-                alt="Dimensional brunette with glossy waves"
+                src={juliaEditorial2}
+                alt="Julia at work — behind the chair"
                 width={800}
                 height={1000}
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover"
               />
               <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                Dimensional Brunette
+                In Her Element
               </figcaption>
             </figure>
           </div>

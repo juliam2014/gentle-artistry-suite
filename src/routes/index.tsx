@@ -156,7 +156,7 @@ function Index() {
                 </div>
                 <div className="w-px h-10 bg-foreground/10" />
                 <div>
-                  <p className="font-serif text-3xl text-accent">500+</p>
+                  <p className="font-serif text-3xl text-accent">​</p>
                   <p className="text-[10px] uppercase tracking-luxe text-foreground/50 mt-1">Happy Clients</p>
                 </div>
                 <div className="w-px h-10 bg-foreground/10" />

@@ -129,7 +129,7 @@ const scalpAddons = [
     includes: ["extended scalp massage", "slow, relaxing shampoo service", "tension relief + stress release"],
     benefits: [
       "Instant client favorite",
-      "Easiest add-on to sell",
+      "\n\n​",
       "Turns a shampoo into a mini spa moment",
     ],
   },

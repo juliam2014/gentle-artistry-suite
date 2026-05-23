@@ -5,7 +5,7 @@ import galleryBlonde from "@/assets/gallery-blonde.jpg";
 import galleryBrunette from "/181f7482-3fc7-4941-9ce8-2717cf1217d8.jpg";
 import gallerySkin from "/5fef4bdd-0e22-42d1-9a36-6b7cd4ae9a1c.jpg";
 import galleryScalp from "@/assets/gallery-scalp.jpg";
-import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
+import ritualFlatlay from "/cb2bfcd9-394d-448e-a2fe-a3eacba0089c.jpg";
 import productBrush from "/bdd11721-e3e1-4409-99f5-0f511046f7c9.jpg";
 import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
 import juliaEditorial2 from "@/assets/julia-editorial-2.jpg";

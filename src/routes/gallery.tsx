@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PageHeader } from "@/components/site/PageHeader";
 import galleryBlonde from "@/assets/gallery-blonde.jpg";
 import galleryBrunette from "@/assets/gallery-brunette.jpg";
-import gallerySkin from "@/assets/gallery-skin.jpg";
+import gallerySkin from "/5fef4bdd-0e22-42d1-9a36-6b7cd4ae9a1c.jpg";
 import galleryScalp from "@/assets/gallery-scalp.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
 import productBrush from "@/assets/product-brush.jpg";

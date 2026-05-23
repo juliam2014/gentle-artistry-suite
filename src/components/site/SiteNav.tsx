@@ -38,12 +38,14 @@ export function SiteNav() {
           ))}
         </div>
 
-        <Link
-          to="/booking"
+        <a
+          href={VAGARO_BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:inline-block bg-foreground text-background px-5 py-2.5 text-[11px] uppercase tracking-luxe font-medium hover:bg-accent transition-colors"
         >
           Book Now
-        </Link>
+        </a>
 
         <button
           type="button"

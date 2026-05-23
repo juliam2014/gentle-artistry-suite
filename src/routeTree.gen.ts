@@ -12,10 +12,15 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-facial-spring-hill-tn'
+import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
+import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as EducationRouteImport } from './routes/education'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookingRouteImport } from './routes/booking'
+import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
+import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -34,6 +39,23 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ScalpFacialSpringHillTnRoute = ScalpFacialSpringHillTnRouteImport.update({
+  id: '/scalp-facial-spring-hill-tn',
+  path: '/scalp-facial-spring-hill-tn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LuxuryHairSalonSpringHillTnRoute =
+  LuxuryHairSalonSpringHillTnRouteImport.update({
+    id: '/luxury-hair-salon-spring-hill-tn',
+    path: '/luxury-hair-salon-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const HairAndEstheticServicesSpringHillTnRoute =
+  HairAndEstheticServicesSpringHillTnRouteImport.update({
+    id: '/hair-and-esthetic-services-spring-hill-tn',
+    path: '/hair-and-esthetic-services-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
@@ -54,6 +76,17 @@ const BookingRoute = BookingRouteImport.update({
   path: '/booking',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlondingSpecialistSpringHillTnRoute =
+  BlondingSpecialistSpringHillTnRouteImport.update({
+    id: '/blonding-specialist-spring-hill-tn',
+    path: '/blonding-specialist-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BalayageSpringHillTnRoute = BalayageSpringHillTnRouteImport.update({
+  id: '/balayage-spring-hill-tn',
+  path: '/balayage-spring-hill-tn',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -68,10 +101,15 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
+  '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
+  '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
+  '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -79,10 +117,15 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
+  '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
+  '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
+  '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -91,10 +134,15 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
+  '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
+  '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
+  '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRoute
   '/shop': typeof ShopRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -104,10 +152,15 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/balayage-spring-hill-tn'
+    | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
     | '/education'
     | '/gallery'
+    | '/hair-and-esthetic-services-spring-hill-tn'
+    | '/luxury-hair-salon-spring-hill-tn'
+    | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/shop'
     | '/sitemap.xml'
@@ -115,10 +168,15 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/balayage-spring-hill-tn'
+    | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
     | '/education'
     | '/gallery'
+    | '/hair-and-esthetic-services-spring-hill-tn'
+    | '/luxury-hair-salon-spring-hill-tn'
+    | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/shop'
     | '/sitemap.xml'
@@ -126,10 +184,15 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/balayage-spring-hill-tn'
+    | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
     | '/education'
     | '/gallery'
+    | '/hair-and-esthetic-services-spring-hill-tn'
+    | '/luxury-hair-salon-spring-hill-tn'
+    | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/shop'
     | '/sitemap.xml'
@@ -138,10 +201,15 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BalayageSpringHillTnRoute: typeof BalayageSpringHillTnRoute
+  BlondingSpecialistSpringHillTnRoute: typeof BlondingSpecialistSpringHillTnRoute
   BookingRoute: typeof BookingRoute
   ContactRoute: typeof ContactRoute
   EducationRoute: typeof EducationRoute
   GalleryRoute: typeof GalleryRoute
+  HairAndEstheticServicesSpringHillTnRoute: typeof HairAndEstheticServicesSpringHillTnRoute
+  LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
+  ScalpFacialSpringHillTnRoute: typeof ScalpFacialSpringHillTnRoute
   ServicesRoute: typeof ServicesRoute
   ShopRoute: typeof ShopRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -168,6 +236,27 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scalp-facial-spring-hill-tn': {
+      id: '/scalp-facial-spring-hill-tn'
+      path: '/scalp-facial-spring-hill-tn'
+      fullPath: '/scalp-facial-spring-hill-tn'
+      preLoaderRoute: typeof ScalpFacialSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/luxury-hair-salon-spring-hill-tn': {
+      id: '/luxury-hair-salon-spring-hill-tn'
+      path: '/luxury-hair-salon-spring-hill-tn'
+      fullPath: '/luxury-hair-salon-spring-hill-tn'
+      preLoaderRoute: typeof LuxuryHairSalonSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hair-and-esthetic-services-spring-hill-tn': {
+      id: '/hair-and-esthetic-services-spring-hill-tn'
+      path: '/hair-and-esthetic-services-spring-hill-tn'
+      fullPath: '/hair-and-esthetic-services-spring-hill-tn'
+      preLoaderRoute: typeof HairAndEstheticServicesSpringHillTnRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -198,6 +287,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BookingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blonding-specialist-spring-hill-tn': {
+      id: '/blonding-specialist-spring-hill-tn'
+      path: '/blonding-specialist-spring-hill-tn'
+      fullPath: '/blonding-specialist-spring-hill-tn'
+      preLoaderRoute: typeof BlondingSpecialistSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/balayage-spring-hill-tn': {
+      id: '/balayage-spring-hill-tn'
+      path: '/balayage-spring-hill-tn'
+      fullPath: '/balayage-spring-hill-tn'
+      preLoaderRoute: typeof BalayageSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -218,10 +321,16 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BalayageSpringHillTnRoute: BalayageSpringHillTnRoute,
+  BlondingSpecialistSpringHillTnRoute: BlondingSpecialistSpringHillTnRoute,
   BookingRoute: BookingRoute,
   ContactRoute: ContactRoute,
   EducationRoute: EducationRoute,
   GalleryRoute: GalleryRoute,
+  HairAndEstheticServicesSpringHillTnRoute:
+    HairAndEstheticServicesSpringHillTnRoute,
+  LuxuryHairSalonSpringHillTnRoute: LuxuryHairSalonSpringHillTnRoute,
+  ScalpFacialSpringHillTnRoute: ScalpFacialSpringHillTnRoute,
   ServicesRoute: ServicesRoute,
   ShopRoute: ShopRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -229,3 +338,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

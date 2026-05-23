@@ -19,7 +19,6 @@ import { Route as EducationRouteImport } from './routes/education'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookingRouteImport } from './routes/booking'
 import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
-import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -78,11 +77,6 @@ const BlondingSpecialistSpringHillTnRoute =
     path: '/blonding-specialist-spring-hill-tn',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const BalayageSpringHillTnRoute = BalayageSpringHillTnRouteImport.update({
   id: '/balayage-spring-hill-tn',
   path: '/balayage-spring-hill-tn',
@@ -108,7 +102,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -125,7 +118,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -143,7 +135,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/balayage-spring-hill-tn': typeof BalayageSpringHillTnRoute
-  '/blog': typeof BlogRouteWithChildren
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
@@ -162,7 +153,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -179,7 +169,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -196,7 +185,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/balayage-spring-hill-tn'
-    | '/blog'
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
@@ -214,7 +202,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BalayageSpringHillTnRoute: typeof BalayageSpringHillTnRoute
-  BlogRoute: typeof BlogRouteWithChildren
   BlondingSpecialistSpringHillTnRoute: typeof BlondingSpecialistSpringHillTnRoute
   BookingRoute: typeof BookingRoute
   ContactRoute: typeof ContactRoute
@@ -299,13 +286,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlondingSpecialistSpringHillTnRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/balayage-spring-hill-tn': {
       id: '/balayage-spring-hill-tn'
       path: '/balayage-spring-hill-tn'
@@ -337,21 +317,10 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface BlogRouteChildren {
-  BlogSlugRoute: typeof BlogSlugRoute
-}
-
-const BlogRouteChildren: BlogRouteChildren = {
-  BlogSlugRoute: BlogSlugRoute,
-}
-
-const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BalayageSpringHillTnRoute: BalayageSpringHillTnRoute,
-  BlogRoute: BlogRouteWithChildren,
   BlondingSpecialistSpringHillTnRoute: BlondingSpecialistSpringHillTnRoute,
   BookingRoute: BookingRoute,
   ContactRoute: ContactRoute,
@@ -367,3 +336,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -3,8 +3,6 @@ import type {} from "@tanstack/react-start";
 
 const BASE_URL = "";
 
-import { BLOG_POSTS } from "@/lib/blog-posts";
-
 const staticEntries = [
   { path: "/", priority: "1.0", changefreq: "weekly" as const },
   { path: "/about", priority: "0.8", changefreq: "monthly" as const },
@@ -14,7 +12,6 @@ const staticEntries = [
   { path: "/education", priority: "0.7", changefreq: "weekly" as const },
   { path: "/gallery", priority: "0.7", changefreq: "monthly" as const },
   { path: "/contact", priority: "0.6", changefreq: "monthly" as const },
-  { path: "/blog", priority: "0.9", changefreq: "weekly" as const },
   { path: "/balayage-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
   { path: "/blonding-specialist-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
   { path: "/scalp-facial-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
@@ -22,13 +19,7 @@ const staticEntries = [
   { path: "/hair-and-esthetic-services-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
 ];
 
-const blogEntries = BLOG_POSTS.map((p) => ({
-  path: `/blog/${p.slug}`,
-  priority: "0.7",
-  changefreq: "monthly" as const,
-}));
-
-const entries = [...staticEntries, ...blogEntries];
+const entries = [...staticEntries];
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {

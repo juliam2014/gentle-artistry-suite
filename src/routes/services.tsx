@@ -297,13 +297,10 @@ function ServicesPage() {
       <section className="px-6 lg:px-8 pb-24 md:pb-32 bg-beige/30">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 pt-20">
-            <span className="eyebrow block mb-4">Scalp Add-Ons</span>
+            <span className="eyebrow block mb-4">Scalp + Shampoo Upgrades</span>
             <h2 className="font-serif italic text-4xl md:text-5xl leading-tight mb-5">
-              Treat your scalp like skin.
+              Elevate your wash experience.
             </h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-              Add a scalp treatment to any color service for deeper cleansing, better product absorption, and a truly elevated self-care experience.
-            </p>
           </div>
 
           <div className="space-y-10">
@@ -324,22 +321,42 @@ function ServicesPage() {
                 </header>
 
                 <div className="grid md:grid-cols-2 gap-8">
+                  {s.removes.length > 1 && (
+                    <div>
+                      <p className="eyebrow mb-3">Removes buildup from</p>
+                      <ul className="space-y-2 text-sm text-foreground/70">
+                        {s.removes.map((r) => (
+                          <li key={r} className="flex gap-2">
+                            <span className="text-accent">—</span>
+                            <span>{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {s.includes.length > 0 && (
+                    <div>
+                      <p className="eyebrow mb-3">Includes</p>
+                      <ul className="space-y-2 text-sm text-foreground/70">
+                        {s.includes.map((i) => (
+                          <li key={i} className="flex gap-2">
+                            <span className="text-accent">—</span>
+                            <span>{i}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                   <div>
-                    <p className="eyebrow mb-3">Includes</p>
+                    <p className="eyebrow mb-3">Benefits</p>
                     <ul className="space-y-2 text-sm text-foreground/70">
-                      {s.includes.map((i) => (
-                        <li key={i} className="flex gap-2">
-                          <span className="text-accent">—</span>
-                          <span>{i}</span>
+                      {s.benefits.map((b) => (
+                        <li key={b} className="flex gap-2">
+                          <span>✔</span>
+                          <span>{b}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
-                  <div>
-                    <p className="eyebrow mb-3">Best for</p>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      {s.bestFor}
-                    </p>
                   </div>
                 </div>
 

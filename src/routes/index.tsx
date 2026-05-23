@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
+import { VAGARO_BOOKING_URL } from "@/lib/booking";
 import heroSalon from "@/assets/hero-salon.jpg";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
@@ -71,12 +72,14 @@ function Index() {
             natural confidence.
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4 animate-fade-up [animation-delay:400ms]">
-            <Link
-              to="/booking"
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors"
             >
               Book Appointment
-            </Link>
+            </a>
             <Link
               to="/shop"
               className="px-10 py-4 border border-foreground/20 text-[11px] uppercase tracking-luxe hover:bg-beige transition-colors"
@@ -181,9 +184,11 @@ function Index() {
                 { name: "Lived-in Dimensional Color", meta: "180 Minutes • From $325" },
                 { name: "Essential Esthetic Refresh", meta: "45 Minutes • From $95" },
               ].map((s) => (
-                <Link
+                <a
                   key={s.name}
-                  to="/booking"
+                  href={VAGARO_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group border-b border-foreground/10 pb-6 flex justify-between items-center"
                 >
                   <div>
@@ -195,7 +200,7 @@ function Index() {
                   <span className="text-[11px] uppercase tracking-luxe group-hover:translate-x-2 transition-transform">
                     Book →
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
             <Link

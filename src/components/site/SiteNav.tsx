@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { VAGARO_BOOKING_URL } from "@/lib/booking";
 
 const links = [
   { to: "/services", label: "Services" },
@@ -37,12 +38,14 @@ export function SiteNav() {
           ))}
         </div>
 
-        <Link
-          to="/booking"
+        <a
+          href={VAGARO_BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:inline-block bg-foreground text-background px-5 py-2.5 text-[11px] uppercase tracking-luxe font-medium hover:bg-accent transition-colors"
         >
           Book Now
-        </Link>
+        </a>
 
         <button
           type="button"
@@ -67,13 +70,15 @@ export function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/booking"
+            <a
+              href={VAGARO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="bg-foreground text-background text-center px-5 py-3 text-[11px] uppercase tracking-luxe font-medium mt-2"
             >
               Book Now
-            </Link>
+            </a>
           </div>
         </div>
       )}

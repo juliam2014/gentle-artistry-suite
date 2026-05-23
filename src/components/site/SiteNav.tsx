@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { VAGARO_BOOKING_URL } from "@/lib/booking";
 
 const links = [
   { to: "/services", label: "Services" },

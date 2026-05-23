@@ -184,9 +184,11 @@ function Index() {
                 { name: "Lived-in Dimensional Color", meta: "180 Minutes • From $325" },
                 { name: "Essential Esthetic Refresh", meta: "45 Minutes • From $95" },
               ].map((s) => (
-                <Link
+                <a
                   key={s.name}
-                  to="/booking"
+                  href={VAGARO_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group border-b border-foreground/10 pb-6 flex justify-between items-center"
                 >
                   <div>
@@ -198,7 +200,7 @@ function Index() {
                   <span className="text-[11px] uppercase tracking-luxe group-hover:translate-x-2 transition-transform">
                     Book →
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
             <Link

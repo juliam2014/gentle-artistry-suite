@@ -103,9 +103,8 @@ function ContactPage() {
             <div>
               <p className="eyebrow mb-3">Hours</p>
               <ul className="space-y-2 text-foreground/70">
-                <li className="flex justify-between"><span>Tuesday — Friday</span><span>10:00 — 19:00</span></li>
-                <li className="flex justify-between"><span>Saturday</span><span>10:00 — 17:00</span></li>
-                <li className="flex justify-between"><span>Sunday — Monday</span><span>Closed</span></li>
+                <li className="flex justify-between"><span>Monday — Friday</span><span>9:00 — 3:30</span></li>
+                <li className="flex justify-between"><span>Saturday — Sunday</span><span>Closed</span></li>
               </ul>
             </div>
             <div>

@@ -93,9 +93,9 @@ const LOCAL_BUSINESS_JSONLD = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "09:00",
-      closes: "18:00",
+      closes: "15:30",
     },
   ],
   makesOffer: [

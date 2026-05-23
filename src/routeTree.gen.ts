@@ -15,7 +15,6 @@ import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-faci
 import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
 import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as EstheticsRouteImport } from './routes/esthetics'
 import { Route as EducationRouteImport } from './routes/education'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookingRouteImport } from './routes/booking'
@@ -56,11 +55,6 @@ const HairAndEstheticServicesSpringHillTnRoute =
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EstheticsRoute = EstheticsRouteImport.update({
-  id: '/esthetics',
-  path: '/esthetics',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EducationRoute = EducationRouteImport.update({
@@ -119,7 +113,6 @@ export interface FileRoutesByFullPath {
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
-  '/esthetics': typeof EstheticsRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -137,7 +130,6 @@ export interface FileRoutesByTo {
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
-  '/esthetics': typeof EstheticsRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -156,7 +148,6 @@ export interface FileRoutesById {
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
-  '/esthetics': typeof EstheticsRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -176,7 +167,6 @@ export interface FileRouteTypes {
     | '/booking'
     | '/contact'
     | '/education'
-    | '/esthetics'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -194,7 +184,6 @@ export interface FileRouteTypes {
     | '/booking'
     | '/contact'
     | '/education'
-    | '/esthetics'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -212,7 +201,6 @@ export interface FileRouteTypes {
     | '/booking'
     | '/contact'
     | '/education'
-    | '/esthetics'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -231,7 +219,6 @@ export interface RootRouteChildren {
   BookingRoute: typeof BookingRoute
   ContactRoute: typeof ContactRoute
   EducationRoute: typeof EducationRoute
-  EstheticsRoute: typeof EstheticsRoute
   GalleryRoute: typeof GalleryRoute
   HairAndEstheticServicesSpringHillTnRoute: typeof HairAndEstheticServicesSpringHillTnRoute
   LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
@@ -282,13 +269,6 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/esthetics': {
-      id: '/esthetics'
-      path: '/esthetics'
-      fullPath: '/esthetics'
-      preLoaderRoute: typeof EstheticsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/education': {
@@ -376,7 +356,6 @@ const rootRouteChildren: RootRouteChildren = {
   BookingRoute: BookingRoute,
   ContactRoute: ContactRoute,
   EducationRoute: EducationRoute,
-  EstheticsRoute: EstheticsRoute,
   GalleryRoute: GalleryRoute,
   HairAndEstheticServicesSpringHillTnRoute:
     HairAndEstheticServicesSpringHillTnRoute,

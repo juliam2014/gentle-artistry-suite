@@ -118,6 +118,52 @@ function Index() {
         </div>
       </section>
 
+      {/* STUDIO PORTRAITS */}
+      <section className="py-24 md:py-32 px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="eyebrow block mb-6">The Artist</span>
+            <h2 className="font-serif italic text-4xl md:text-5xl">Behind the chair</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <figure className="space-y-4">
+              <img
+                src={juliaEditorial1}
+                alt="Julia — editorial portrait in the studio"
+                width={800}
+                height={1000}
+                loading="lazy"
+                className="w-full aspect-[4/5] object-cover"
+              />
+              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
+                Editorial — Julia Marks
+              </figcaption>
+            </figure>
+            <figure className="space-y-4">
+              <img
+                src={juliaEditorial2}
+                alt="Julia at work — behind the chair"
+                width={800}
+                height={1000}
+                loading="lazy"
+                className="w-full aspect-[4/5] object-cover"
+              />
+              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
+                In Her Element
+              </figcaption>
+            </figure>
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/gallery"
+              className="inline-block border-b border-foreground py-1 text-[11px] uppercase tracking-luxe font-medium"
+            >
+              View the Full Gallery
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* PHILOSOPHY / PILLARS */}
       <section className="py-24 md:py-32 px-6 lg:px-8 bg-beige/40">
         <div className="max-w-5xl mx-auto text-center">
@@ -284,51 +330,7 @@ function Index() {
         </div>
       </section>
 
-      {/* STUDIO PORTRAITS */}
-      <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="eyebrow block mb-6">The Artist</span>
-            <h2 className="font-serif italic text-4xl md:text-5xl">Behind the chair</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <figure className="space-y-4">
-              <img
-                src={juliaEditorial1}
-                alt="Julia — editorial portrait in the studio"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                Editorial — Julia Marks
-              </figcaption>
-            </figure>
-            <figure className="space-y-4">
-              <img
-                src={juliaEditorial2}
-                alt="Julia at work — behind the chair"
-                width={800}
-                height={1000}
-                loading="lazy"
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <figcaption className="text-[10px] uppercase tracking-luxe text-foreground/50">
-                In Her Element
-              </figcaption>
-            </figure>
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              to="/gallery"
-              className="inline-block border-b border-foreground py-1 text-[11px] uppercase tracking-luxe font-medium"
-            >
-              View the Full Gallery
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       {/* SOCIAL */}
       <section className="py-24 px-6 lg:px-8 bg-beige/40 text-center">

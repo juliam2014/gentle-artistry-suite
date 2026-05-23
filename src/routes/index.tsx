@@ -120,25 +120,79 @@ function Index() {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* ABOUT JULIA */}
       <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img
-            src={juliaEditorial1}
-            alt="Julia Marks"
-            width={800}
-            height={1000}
-            className="w-full aspect-[4/5] object-cover"
-          />
-          <div className="space-y-6">
-            <span className="eyebrow block">About</span>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">The Artist Behind the Chair</h2>
-            <p className="text-foreground/70 leading-relaxed">
-              [Your about me text goes here — write your story, your philosophy, and what makes your studio special.]
-            </p>
-            <p className="text-foreground/70 leading-relaxed">
-              [Add more paragraphs about your journey, training, and what clients can expect when they sit in your chair.]
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            {/* Photo — large, editorial crop */}
+            <div className="lg:col-span-5">
+              <div className="relative">
+                <img
+                  src={juliaEditorial1}
+                  alt="Julia Marks — owner and lead artist at Julia Marks Beauty"
+                  width={800}
+                  height={1000}
+                  className="w-full aspect-[4/5] object-cover"
+                />
+                <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-24 h-24 md:w-32 md:h-32 border border-foreground/10 bg-background/80 backdrop-blur-sm flex items-center justify-center">
+                  <span className="font-serif italic text-lg md:text-xl text-accent">JM</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Text — warm and personal */}
+            <div className="lg:col-span-7 space-y-8">
+              <div className="space-y-4">
+                <span className="eyebrow block">Meet Julia</span>
+                <h2 className="font-serif text-4xl md:text-6xl leading-[1.1]">
+                  The heart behind <em className="italic text-accent">every detail</em>
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-foreground/70 leading-relaxed max-w-xl">
+                <p>
+                  Hi, I'm Julia — a beauty artist, scalp wellness enthusiast, and the founder of this studio.
+                  My journey started with a simple belief: that every person who sits in my chair deserves
+                  to feel seen, cared for, and genuinely radiant.
+                </p>
+                <p>
+                  Over the years, I've trained in advanced color techniques, therapeutic scalp care,
+                  and holistic esthetics — but the real magic happens in the connection. I listen.
+                  I customize. I treat your hair and skin like the living, breathing expressions of you that they are.
+                </p>
+                <p>
+                  When you book with me, you're not just getting a service. You're stepping into a space
+                  where your comfort matters, your time is respected, and your natural beauty is honored.
+                  Let's create something beautiful together.
+                </p>
+              </div>
+
+              <div className="pt-4 flex items-center gap-8">
+                <div>
+                  <p className="font-serif text-3xl text-accent">10+</p>
+                  <p className="text-[10px] uppercase tracking-luxe text-foreground/50 mt-1">Years of Experience</p>
+                </div>
+                <div className="w-px h-10 bg-foreground/10" />
+                <div>
+                  <p className="font-serif text-3xl text-accent">500+</p>
+                  <p className="text-[10px] uppercase tracking-luxe text-foreground/50 mt-1">Happy Clients</p>
+                </div>
+                <div className="w-px h-10 bg-foreground/10" />
+                <div>
+                  <p className="font-serif text-3xl text-accent">1</p>
+                  <p className="text-[10px] uppercase tracking-luxe text-foreground/50 mt-1">Quiet Sanctuary</p>
+                </div>
+              </div>
+
+              <a
+                href={VAGARO_BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-10 py-4 bg-foreground text-background text-[11px] uppercase tracking-luxe hover:bg-accent transition-colors mt-2"
+              >
+                Book With Julia
+              </a>
+            </div>
           </div>
         </div>
       </section>

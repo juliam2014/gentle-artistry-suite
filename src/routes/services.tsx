@@ -117,7 +117,7 @@ const estheticPackages = [
   {
     icon: "👁️",
     title: "Brow Polish Package",
-    price: "$45–$60",
+    price: "$45",
     tagline: "Defined, natural brows with soft structure",
     includes: ["Brow shaping", "Brow tint"],
     bestFor: "Clients wanting fuller, more polished brows with minimal maintenance.",

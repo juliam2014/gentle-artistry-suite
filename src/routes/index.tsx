@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Newsletter } from "@/components/site/Newsletter";
 import { VAGARO_BOOKING_URL } from "@/lib/booking";
 
-import juliaEditorial1 from "/8ad8a245-37b9-4cb6-9850-4640026f195f.jpg";
+import juliaEditorial1 from "/526e9e5e-e897-44ab-8721-78fac985c2af.jpg";
 import salonSpace1 from "@/assets/salon-space-1.jpg";
 import salonSpace2 from "@/assets/salon-space-2.jpg";
 import salonSpace3 from "@/assets/salon-space-3.jpg";

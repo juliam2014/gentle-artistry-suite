@@ -11,13 +11,13 @@ import productBrush from "@/assets/product-brush.jpg";
 export const Route = createFileRoute("/education")({
   head: () => ({
     meta: [
-      { title: "Journal & Education — Aura & Essence" },
+      { title: "Journal & Education — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "A library of beauty education — scalp health, hair growth, styling tutorials, skincare routines, and self-care wisdom.",
       },
-      { property: "og:title", content: "The Journal — Aura & Essence" },
+      { property: "og:title", content: "The Journal — Julia Marks Beauty" },
     ],
   }),
   component: EducationPage,

@@ -19,9 +19,9 @@ export function SiteNav() {
         <Link
           to="/"
           className="font-serif italic text-2xl tracking-tight shrink-0"
-          aria-label="Aura & Essence home"
+          aria-label="Julia Marks Beauty home"
         >
-          Aura & Essence
+          Julia Marks Beauty
         </Link>
 
         <div className="hidden lg:flex items-center gap-8">

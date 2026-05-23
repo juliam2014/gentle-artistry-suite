@@ -4,13 +4,13 @@ import { PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Aura & Essence" },
+      { title: "Services — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Hair color, balayage, blonding, haircuts, scalp facials, brow & lash, esthetic services and finishing styling.",
       },
-      { property: "og:title", content: "The Service Menu — Aura & Essence" },
+      { property: "og:title", content: "The Service Menu — Julia Marks Beauty" },
     ],
   }),
   component: ServicesPage,

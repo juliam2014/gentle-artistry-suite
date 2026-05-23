@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24">
           <div className="md:col-span-2">
-            <p className="font-serif italic text-4xl mb-6">Aura & Essence</p>
+            <p className="font-serif italic text-4xl mb-6">Julia Marks Beauty</p>
             <p className="max-w-xs text-foreground/60 text-sm leading-relaxed mb-8">
               Cultivating confidence through intentional beauty, scalp health, and
               educational wellness practices.
@@ -40,7 +40,7 @@ export function SiteFooter() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-10 border-t border-border">
           <p className="text-[10px] text-foreground/40 uppercase tracking-luxe">
-            © {new Date().getFullYear()} Aura & Essence. All Rights Reserved.
+            © {new Date().getFullYear()} Julia Marks Beauty. All Rights Reserved.
           </p>
           <p className="text-[10px] text-foreground/40 uppercase tracking-luxe">
             Designed for Radiance

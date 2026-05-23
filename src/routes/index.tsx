@@ -13,13 +13,13 @@ import galleryBrunette from "@/assets/gallery-brunette.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aura & Essence — Luxury Beauty, Hair & Scalp Wellness" },
+      { title: "Julia Marks Beauty — Luxury Beauty, Hair & Scalp Wellness" },
       {
         name: "description",
         content:
           "Boutique luxury salon and wellness studio for hair, scalp health, skincare, and intentional self-care.",
       },
-      { property: "og:title", content: "Aura & Essence — Luxury Beauty Studio" },
+      { property: "og:title", content: "Julia Marks Beauty — Luxury Beauty Studio" },
       { property: "og:image", content: heroSalon },
       { name: "twitter:image", content: heroSalon },
     ],
@@ -328,7 +328,7 @@ function Index() {
       {/* SOCIAL */}
       <section className="py-24 px-6 lg:px-8 bg-beige/40 text-center">
         <span className="eyebrow block mb-6">Follow Along</span>
-        <h2 className="font-serif italic text-4xl md:text-5xl mb-6">@auraandessence</h2>
+        <h2 className="font-serif italic text-4xl md:text-5xl mb-6">@juliamarksbeauty</h2>
         <p className="text-foreground/60 max-w-xl mx-auto mb-8">
           Daily inspiration from the studio — rituals, transformations, and quiet moments of beauty.
         </p>

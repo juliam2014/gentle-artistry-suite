@@ -11,13 +11,13 @@ import productBrush from "@/assets/product-brush.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Aura & Essence" },
+      { title: "Gallery — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Before & after portfolio of blonding, brunettes, scalp transformations, styling and skin services.",
       },
-      { property: "og:title", content: "Gallery — Aura & Essence" },
+      { property: "og:title", content: "Gallery — Julia Marks Beauty" },
       { property: "og:image", content: galleryBlonde },
     ],
   }),

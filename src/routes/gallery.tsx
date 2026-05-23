@@ -34,9 +34,6 @@ const items = [
   { img: gallerySkin, label: "Glow Facial" },
   { img: productBrush, label: "Finishing Touch" },
   { img: ritualFlatlay, label: "After Care Ritual" },
-  { img: galleryBrunette, label: "Soft Mocha" },
-  { img: galleryScalp, label: "Hydration Therapy" },
-  { img: gallerySkin, label: "Express Radiance" },
 ];
 
 function GalleryPage() {

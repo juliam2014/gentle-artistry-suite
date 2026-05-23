@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import { PageHeader } from "@/components/site/PageHeader";
 import galleryBlonde from "/3d35bc30-57b1-48e7-a442-9c9c4da3aee3.jpg";
 import galleryBrunette from "/bc63465d-24a1-4f63-9cc4-6ee86ab3fed7.jpg";
@@ -41,9 +40,6 @@ const items = [
 ];
 
 function GalleryPage() {
-  const [filter, setFilter] = useState("All");
-  const filtered = filter === "All" ? items : items.filter((i) => i.cat === filter);
-
   return (
     <>
       <PageHeader
@@ -54,24 +50,8 @@ function GalleryPage() {
 
       <section className="px-6 lg:px-8 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
-            {categories.map((c) => (
-              <button
-                key={c}
-                onClick={() => setFilter(c)}
-                className={`px-5 py-2 text-[11px] uppercase tracking-luxe border transition-colors ${
-                  filter === c
-                    ? "border-foreground bg-foreground text-background"
-                    : "border-foreground/15 hover:bg-beige/50"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
-
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-            {filtered.map((i, idx) => (
+            {items.map((i, idx) => (
               <figure key={idx} className="break-inside-avoid">
                 <div className="overflow-hidden bg-beige/40">
                   <img
@@ -83,7 +63,6 @@ function GalleryPage() {
                 </div>
                 <figcaption className="mt-3 flex items-center justify-between text-[10px] uppercase tracking-luxe text-foreground/50">
                   <span>{i.label}</span>
-                  <span>{i.cat}</span>
                 </figcaption>
               </figure>
             ))}

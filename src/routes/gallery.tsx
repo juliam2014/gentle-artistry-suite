@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PageHeader } from "@/components/site/PageHeader";
 import galleryBlonde from "/3d35bc30-57b1-48e7-a442-9c9c4da3aee3.jpg";
 import galleryBrunette from "/bc63465d-24a1-4f63-9cc4-6ee86ab3fed7.jpg";
-import gallerySkin from "/5fef4bdd-0e22-42d1-9a36-6b7cd4ae9a1c.jpg";
+import gallerySkin from "/d676a793-910d-47af-979f-ca8ff288b83e.jpg";
 import galleryScalp from "/7d38846f-5dd7-4cbf-9577-7561fb56fefb.jpg";
 import ritualFlatlay from "/cb2bfcd9-394d-448e-a2fe-a3eacba0089c.jpg";
 import productBrush from "/bdd11721-e3e1-4409-99f5-0f511046f7c9.jpg";

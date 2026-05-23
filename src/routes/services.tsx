@@ -106,6 +106,33 @@ const appointments = [
   },
 ];
 
+const scalpAddons = [
+  {
+    icon: "💆‍♀️",
+    title: "Express Scalp Detox",
+    price: "$55",
+    tagline: "Clarifying cleanse for product buildup + oil balance",
+    includes: ["Scalp analysis", "Exfoliating cleanse", "Balancing serum", "Scalp massage"],
+    bestFor: "Clients with product buildup, oily scalp, or anyone wanting a fresh foundation before color.",
+  },
+  {
+    icon: "🌱",
+    title: "Growth Support Scalp Treatment",
+    price: "$75",
+    tagline: "Stimulate circulation + support stronger hair growth",
+    includes: ["Scalp analysis", "Growth-stimulating massage", "Customized growth tonic", "LED therapy"],
+    bestFor: "Clients experiencing thinning, slow growth, or postpartum shedding who want to support hair density.",
+  },
+  {
+    icon: "🧖‍♀️",
+    title: "Post-Color Scalp Soothe",
+    price: "$45",
+    tagline: "Calm + hydrate the scalp after lightening or color",
+    includes: ["Soothing scalp mask", "Hydrating serum", "Cooling massage", "Protection finish"],
+    bestFor: "Clients with sensitive scalps or anyone who experiences dryness or irritation after color services.",
+  },
+];
+
 const estheticGoals = [
   "Define my brows",
   "Enhance my lashes",
@@ -251,6 +278,73 @@ function ServicesPage() {
           </aside>
         </div>
       </section>
+
+      <section className="px-6 lg:px-8 pb-24 md:pb-32 bg-beige/30">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 pt-20">
+            <span className="eyebrow block mb-4">Scalp Add-Ons</span>
+            <h2 className="font-serif italic text-4xl md:text-5xl leading-tight mb-5">
+              Treat your scalp like skin.
+            </h2>
+            <p className="text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              Add a scalp treatment to any color service for deeper cleansing, better product absorption, and a truly elevated self-care experience.
+            </p>
+          </div>
+
+          <div className="space-y-10">
+            {scalpAddons.map((s) => (
+              <article
+                key={s.title}
+                className="border border-foreground/10 bg-background p-8 md:p-10 space-y-5"
+              >
+                <header className="space-y-2 border-b border-foreground/10 pb-5">
+                  <p className="eyebrow flex items-center gap-2">
+                    <span aria-hidden>{s.icon}</span>
+                    <span>{s.tagline}</span>
+                  </p>
+                  <h3 className="font-serif italic text-3xl md:text-4xl leading-tight">
+                    {s.title}
+                  </h3>
+                  <p className="text-2xl md:text-3xl font-serif">{s.price}</p>
+                </header>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="eyebrow mb-3">Includes</p>
+                    <ul className="space-y-2 text-sm text-foreground/70">
+                      {s.includes.map((i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-accent">—</span>
+                          <span>{i}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="eyebrow mb-3">Best for</p>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      {s.bestFor}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-foreground/10 flex justify-end">
+                  <a
+                    href={VAGARO_BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors"
+                  >
+                    Add to your appointment →
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
       <section className="px-6 lg:px-8 pb-24 md:pb-32 bg-beige/20">
         <div className="max-w-4xl mx-auto pt-20">

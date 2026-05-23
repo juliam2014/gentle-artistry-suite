@@ -30,6 +30,7 @@ const categories = ["All", "Blonding", "Brunettes", "Scalp", "Styling", "Skin"];
 
 const items = [
   { cat: "Styling", img: juliaEditorial1, label: "Editorial — Julia" },
+  { cat: "Styling", img: juliaEditorial2, label: "Behind the Chair" },
   { cat: "Blonding", img: galleryBlonde, label: "Honey Balayage" },
   { cat: "Brunettes", img: galleryBrunette, label: "Dimensional Brunette" },
   { cat: "Scalp", img: galleryScalp, label: "Scalp Detox" },

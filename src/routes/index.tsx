@@ -151,7 +151,7 @@ function Index() {
 
               <div className="pt-4 flex items-center gap-8">
                 <div>
-                  <p className="font-serif text-3xl text-accent">10+</p>
+                  <p className="font-serif text-3xl text-accent">14+</p>
                   <p className="text-[10px] uppercase tracking-luxe text-foreground/50 mt-1">Years of Experience</p>
                 </div>
                 <div className="w-px h-10 bg-foreground/10" />

@@ -133,7 +133,7 @@ function Index() {
 
               <div className="space-y-6 text-foreground/70 leading-relaxed max-w-xl">
                 <p>
-                  Hi, I'm Julia — a beauty artist, scalp wellness enthusiast, and the founder of this studio.
+                  Hi, I'm Julia a beauty artist, scalp wellness enthusiast, and the founder of this studio.
                   My journey started with a simple belief: that every person who sits in my chair deserves
                   to feel seen, cared for, and genuinely radiant.
                 </p>

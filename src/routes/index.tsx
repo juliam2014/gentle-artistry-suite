@@ -41,23 +41,42 @@ export const Route = createFileRoute("/")({
 const testimonials = [
   {
     quote:
-      "I left feeling like the most radiant version of myself. The scalp facial was unlike anything I've experienced — pure ritual, pure care.",
-    name: "Olivia M.",
-    detail: "Scalp Facial + Blonding",
+      "Julia is AMAZING!! She consulted with me prior to starting and made sure she had a clear understanding of what I want and what I would want for the future. I loved that she didn't want to use products that would be hard to remove or damaging to my hair. On top of her knowledge for hair, she is soooo personable! This was my first time meeting her and I felt like I've known her my whole life. I HIGHLY recommend her for all your hair needs.",
+    name: "Lindsey Stamatis",
+    detail: "Color Client",
   },
   {
     quote:
-      "Every appointment feels like a quiet pause from the world. The artistry, the warmth, the intentionality — this is luxury done right.",
-    name: "Hannah R.",
-    detail: "Dimensional Color Client",
+      "Everything about my experience at 931 beauty co was phenomenal! From the minute I walked in the door, the aesthetic and ambience was beautiful, warm and welcoming. And so were the people! I'm 34, and I don't think I have ever had as wonderful a salon experience, ever! Julia was wonderful! She took her time talking to me and helping me decide what I wanted, and she made it come to life. So personable, kind, AND professional!",
+    name: "Paige Werner",
+    detail: "Columbia, TN",
   },
   {
     quote:
-      "I finally feel confident in my hair and skin again. The education and care here is unmatched.",
-    name: "Sienna T.",
-    detail: "Member, The Sanctuary",
+      "Julia did a phenomenal job making me feel right at home. She really understood my hair type, what I wanted done, and executed to perfection! Cannot wait for my next appointment!",
+    name: "Julia Mack",
+    detail: "Columbia, TN",
+  },
+  {
+    quote:
+      "Anyone looking for a great hair stylist who not only is great with hair but provides a welcoming and comfortable environment for her clients — Julia is for you! She listens and relates to me all while working her magic on my hair. Her work area is very clean and you can tell she takes pride in what she does. I continue to get compliments on my hair even when it's not styled. So happy to have her as my hair stylist!",
+    name: "Brittney K.",
+    detail: "Returning Client",
+  },
+  {
+    quote:
+      "Not just another beauty salon — awesome, clean, convenient, professional services. Julia was fantastic, and I'm so excited to have access to such a talented, skilled resource so close to my home.",
+    name: "J.S.",
+    detail: "Columbia, TN",
+  },
+  {
+    quote:
+      "Julia is so sweet and really listened in my extension consult. Gave great and relatable feedback. Looking forward to our install appointment!",
+    name: "T.J.",
+    detail: "Nashville, TN",
   },
 ];
+
 
 function Index() {
   return (

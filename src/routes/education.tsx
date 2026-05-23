@@ -24,12 +24,12 @@ export const Route = createFileRoute("/education")({
 });
 
 const articles = [
-  { title: "The Foundation of Hair Growth Starts at the Scalp", category: "Scalp Health", read: "6 min read", img: galleryScalp },
-  { title: "Building a Slow, Intentional Morning Beauty Ritual", category: "Self-Care", read: "5 min read", img: ritualFlatlay },
-  { title: "How to Style Soft, Lived-in Waves at Home", category: "Hair Styling", read: "8 min read", img: productBrush },
-  { title: "Reading Your Skin: A Gentle Guide to Barrier Health", category: "Skincare", read: "7 min read", img: gallerySkin },
-  { title: "The Quiet Confidence of Showing Up for Yourself", category: "Wellness", read: "4 min read", img: productCream },
-  { title: "Why Your Scalp Needs a Facial Too", category: "Scalp Health", read: "6 min read", img: productSerum },
+  { title: "The Foundation of Hair Growth Starts at the Scalp", category: "Scalp Health", read: "6 min read", img: galleryScalp, slug: "healthy-scalp-equals-healthy-hair" },
+  { title: "Building a Slow, Intentional Morning Beauty Ritual", category: "Self-Care", read: "5 min read", img: ritualFlatlay, slug: "luxury-self-care-habits-for-women" },
+  { title: "How to Style Soft, Lived-in Waves at Home", category: "Hair Styling", read: "8 min read", img: productBrush, slug: "easy-hair-routines-for-busy-moms" },
+  { title: "Reading Your Skin: A Gentle Guide to Barrier Health", category: "Skincare", read: "7 min read", img: gallerySkin, slug: "how-often-should-you-wash-your-hair" },
+  { title: "The Quiet Confidence of Showing Up for Yourself", category: "Wellness", read: "4 min read", img: productCream, slug: "luxury-self-care-habits-for-women" },
+  { title: "Why Your Scalp Needs a Facial Too", category: "Scalp Health", read: "6 min read", img: productSerum, slug: "signs-you-need-a-scalp-facial" },
 ];
 
 const products = [

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
+import { VAGARO_BOOKING_URL } from "@/lib/booking";
 
 export const Route = createFileRoute("/services")({
   head: () => ({

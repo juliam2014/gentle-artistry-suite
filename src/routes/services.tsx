@@ -106,6 +106,33 @@ const appointments = [
   },
 ];
 
+const scalpAddons = [
+  {
+    icon: "💆‍♀️",
+    title: "Express Scalp Detox",
+    price: "$55",
+    tagline: "Clarifying cleanse for product buildup + oil balance",
+    includes: ["Scalp analysis", "Exfoliating cleanse", "Balancing serum", "Scalp massage"],
+    bestFor: "Clients with product buildup, oily scalp, or anyone wanting a fresh foundation before color.",
+  },
+  {
+    icon: "🌱",
+    title: "Growth Support Scalp Treatment",
+    price: "$75",
+    tagline: "Stimulate circulation + support stronger hair growth",
+    includes: ["Scalp analysis", "Growth-stimulating massage", "Customized growth tonic", "LED therapy"],
+    bestFor: "Clients experiencing thinning, slow growth, or postpartum shedding who want to support hair density.",
+  },
+  {
+    icon: "🧖‍♀️",
+    title: "Post-Color Scalp Soothe",
+    price: "$45",
+    tagline: "Calm + hydrate the scalp after lightening or color",
+    includes: ["Soothing scalp mask", "Hydrating serum", "Cooling massage", "Protection finish"],
+    bestFor: "Clients with sensitive scalps or anyone who experiences dryness or irritation after color services.",
+  },
+];
+
 const estheticGoals = [
   "Define my brows",
   "Enhance my lashes",

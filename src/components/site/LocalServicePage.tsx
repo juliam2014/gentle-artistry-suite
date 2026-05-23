@@ -142,7 +142,7 @@ export function LocalServicePage(props: LocalServicePageProps) {
             Based in {BUSINESS.city}, {BUSINESS.regionShort}, our boutique studio welcomes
             clients from across Middle Tennessee — including {NEARBY_CITIES.join(", ")} —
             seeking a luxury hair, scalp, and skincare experience rooted in artistry,
-            education, and intentional self-care.
+            wellness, and intentional self-care.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export function LocalServicePage(props: LocalServicePageProps) {
         <div className="max-w-4xl mx-auto text-center">
           <span className="eyebrow block mb-6">Continue Exploring</span>
           <h2 className="font-serif italic text-3xl md:text-4xl mb-10">
-            Discover related services & education
+            Discover related services
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             {props.relatedLinks.map((l) => (

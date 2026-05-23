@@ -60,7 +60,7 @@ function AboutPage() {
             <p className="text-foreground/70 leading-relaxed">
               Whether you're booking your first scalp facial, refreshing your color,
               or building a new at-home ritual, you'll always be met with intention,
-              warmth, and education here.
+              warmth, and care here.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             {[
               { title: "Intentional", text: "Every product, treatment, and conversation is chosen with care." },
-              { title: "Educational", text: "We teach you the why — so beauty becomes a lifelong ritual, not a trend." },
+              { title: "Empowering", text: "We teach you the why — so beauty becomes a lifelong ritual, not a trend." },
               { title: "Elevated", text: "A boutique standard of warmth, hygiene, and craft in every detail." },
             ].map((v) => (
               <div key={v.title} className="space-y-3">

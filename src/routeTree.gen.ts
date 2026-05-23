@@ -15,7 +15,6 @@ import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-faci
 import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
 import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as EducationRouteImport } from './routes/education'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookingRouteImport } from './routes/booking'
 import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
@@ -55,11 +54,6 @@ const HairAndEstheticServicesSpringHillTnRoute =
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EducationRoute = EducationRouteImport.update({
-  id: '/education',
-  path: '/education',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -112,7 +106,6 @@ export interface FileRoutesByFullPath {
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
-  '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -129,7 +122,6 @@ export interface FileRoutesByTo {
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
-  '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -147,7 +139,6 @@ export interface FileRoutesById {
   '/blonding-specialist-spring-hill-tn': typeof BlondingSpecialistSpringHillTnRoute
   '/booking': typeof BookingRoute
   '/contact': typeof ContactRoute
-  '/education': typeof EducationRoute
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
@@ -166,7 +157,6 @@ export interface FileRouteTypes {
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
-    | '/education'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -183,7 +173,6 @@ export interface FileRouteTypes {
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
-    | '/education'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -200,7 +189,6 @@ export interface FileRouteTypes {
     | '/blonding-specialist-spring-hill-tn'
     | '/booking'
     | '/contact'
-    | '/education'
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
@@ -218,7 +206,6 @@ export interface RootRouteChildren {
   BlondingSpecialistSpringHillTnRoute: typeof BlondingSpecialistSpringHillTnRoute
   BookingRoute: typeof BookingRoute
   ContactRoute: typeof ContactRoute
-  EducationRoute: typeof EducationRoute
   GalleryRoute: typeof GalleryRoute
   HairAndEstheticServicesSpringHillTnRoute: typeof HairAndEstheticServicesSpringHillTnRoute
   LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
@@ -269,13 +256,6 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/education': {
-      id: '/education'
-      path: '/education'
-      fullPath: '/education'
-      preLoaderRoute: typeof EducationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -355,7 +335,6 @@ const rootRouteChildren: RootRouteChildren = {
   BlondingSpecialistSpringHillTnRoute: BlondingSpecialistSpringHillTnRoute,
   BookingRoute: BookingRoute,
   ContactRoute: ContactRoute,
-  EducationRoute: EducationRoute,
   GalleryRoute: GalleryRoute,
   HairAndEstheticServicesSpringHillTnRoute:
     HairAndEstheticServicesSpringHillTnRoute,

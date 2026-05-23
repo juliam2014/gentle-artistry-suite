@@ -6,7 +6,7 @@ import galleryBrunette from "@/assets/gallery-brunette.jpg";
 import gallerySkin from "/5fef4bdd-0e22-42d1-9a36-6b7cd4ae9a1c.jpg";
 import galleryScalp from "@/assets/gallery-scalp.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
-import productBrush from "@/assets/product-brush.jpg";
+import productBrush from "/bdd11721-e3e1-4409-99f5-0f511046f7c9.jpg";
 import juliaEditorial1 from "@/assets/julia-editorial-1.jpg";
 import juliaEditorial2 from "@/assets/julia-editorial-2.jpg";
 

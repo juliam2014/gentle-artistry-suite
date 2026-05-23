@@ -73,7 +73,15 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="pt-40 md:pt-44 pb-20 md:pb-24 px-6 lg:px-8">
+      <section className="pt-40 md:pt-44 pb-20 md:pb-24 px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="/0f629afe-5500-44f1-a354-8ed52f0f7f31.jpg"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+        </div>
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
           <span className="eyebrow mb-6 animate-fade-in">The Ritual of Being</span>
           <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[15ch]">

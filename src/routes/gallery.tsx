@@ -28,7 +28,7 @@ export const Route = createFileRoute("/gallery")({
 const items = [
   { img: juliaEditorial1, label: "Editorial — Julia" },
   { img: juliaEditorial2, label: "Behind the Chair" },
-  { img: galleryBlonde, label: "Honey Balayage" },
+  { img: galleryBlonde, label: "money piece with teasy highlights" },
   { img: galleryBrunette, label: "Dimensional Brunette" },
   { img: galleryScalp, label: "heavy blonding" },
   { img: gallerySkin, label: "Blonding and tonal refresh" },

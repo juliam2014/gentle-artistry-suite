@@ -22,6 +22,10 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ServicesScalpRouteImport } from './routes/services.scalp'
+import { Route as ServicesHairRouteImport } from './routes/services.hair'
+import { Route as ServicesEstheticsRouteImport } from './routes/services.esthetics'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -92,6 +96,26 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesIndexRoute = ServicesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesScalpRoute = ServicesScalpRouteImport.update({
+  id: '/scalp',
+  path: '/scalp',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesHairRoute = ServicesHairRouteImport.update({
+  id: '/hair',
+  path: '/hair',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesEstheticsRoute = ServicesEstheticsRouteImport.update({
+  id: '/esthetics',
+  path: '/esthetics',
+  getParentRoute: () => ServicesRoute,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -110,9 +134,13 @@ export interface FileRoutesByFullPath {
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/services/esthetics': typeof ServicesEstheticsRoute
+  '/services/hair': typeof ServicesHairRoute
+  '/services/scalp': typeof ServicesScalpRoute
+  '/services/': typeof ServicesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,9 +154,12 @@ export interface FileRoutesByTo {
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
-  '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/services/esthetics': typeof ServicesEstheticsRoute
+  '/services/hair': typeof ServicesHairRoute
+  '/services/scalp': typeof ServicesScalpRoute
+  '/services': typeof ServicesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -143,9 +174,13 @@ export interface FileRoutesById {
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/services/esthetics': typeof ServicesEstheticsRoute
+  '/services/hair': typeof ServicesHairRoute
+  '/services/scalp': typeof ServicesScalpRoute
+  '/services/': typeof ServicesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -164,6 +199,10 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/blog/$slug'
+    | '/services/esthetics'
+    | '/services/hair'
+    | '/services/scalp'
+    | '/services/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -177,9 +216,12 @@ export interface FileRouteTypes {
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
-    | '/services'
     | '/sitemap.xml'
     | '/blog/$slug'
+    | '/services/esthetics'
+    | '/services/hair'
+    | '/services/scalp'
+    | '/services'
   id:
     | '__root__'
     | '/'
@@ -196,6 +238,10 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/blog/$slug'
+    | '/services/esthetics'
+    | '/services/hair'
+    | '/services/scalp'
+    | '/services/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -210,7 +256,7 @@ export interface RootRouteChildren {
   HairAndEstheticServicesSpringHillTnRoute: typeof HairAndEstheticServicesSpringHillTnRoute
   LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
   ScalpFacialSpringHillTnRoute: typeof ScalpFacialSpringHillTnRoute
-  ServicesRoute: typeof ServicesRoute
+  ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -307,6 +353,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/': {
+      id: '/services/'
+      path: '/'
+      fullPath: '/services/'
+      preLoaderRoute: typeof ServicesIndexRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/scalp': {
+      id: '/services/scalp'
+      path: '/scalp'
+      fullPath: '/services/scalp'
+      preLoaderRoute: typeof ServicesScalpRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/hair': {
+      id: '/services/hair'
+      path: '/hair'
+      fullPath: '/services/hair'
+      preLoaderRoute: typeof ServicesHairRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/esthetics': {
+      id: '/services/esthetics'
+      path: '/esthetics'
+      fullPath: '/services/esthetics'
+      preLoaderRoute: typeof ServicesEstheticsRouteImport
+      parentRoute: typeof ServicesRoute
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
@@ -327,6 +401,24 @@ const BlogRouteChildren: BlogRouteChildren = {
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
+interface ServicesRouteChildren {
+  ServicesEstheticsRoute: typeof ServicesEstheticsRoute
+  ServicesHairRoute: typeof ServicesHairRoute
+  ServicesScalpRoute: typeof ServicesScalpRoute
+  ServicesIndexRoute: typeof ServicesIndexRoute
+}
+
+const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesEstheticsRoute: ServicesEstheticsRoute,
+  ServicesHairRoute: ServicesHairRoute,
+  ServicesScalpRoute: ServicesScalpRoute,
+  ServicesIndexRoute: ServicesIndexRoute,
+}
+
+const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
+  ServicesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -340,9 +432,19 @@ const rootRouteChildren: RootRouteChildren = {
     HairAndEstheticServicesSpringHillTnRoute,
   LuxuryHairSalonSpringHillTnRoute: LuxuryHairSalonSpringHillTnRoute,
   ScalpFacialSpringHillTnRoute: ScalpFacialSpringHillTnRoute,
-  ServicesRoute: ServicesRoute,
+  ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

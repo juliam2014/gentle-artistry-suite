@@ -33,7 +33,7 @@ const items = [
   { img: galleryScalp, label: "heavy blonding" },
   { img: gallerySkin, label: "Blonding and tonal refresh" },
   { img: productBrush, label: "Finishing Touch" },
-  { img: ritualFlatlay, label: "After Care Ritual" },
+  { img: ritualFlatlay, label: "Brunette with balayage pieces and gloss" },
 ];
 
 function GalleryPage() {

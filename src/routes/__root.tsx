@@ -71,7 +71,7 @@ const LOCAL_BUSINESS_JSONLD = {
   name: "Julia Marks Beauty",
   image: "/og-image.jpg",
   description:
-    "Luxury hair, scalp wellness, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Balayage, blonding, scalp facials, and beauty + skincare services.",
+    "Luxury hair, scalp wellness treatments, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Balayage, blonding, scalp wellness treatments, and beauty + skincare services.",
   telephone: "(615) 555-0142",
   email: "hello@juliamarksbeauty.com",
   priceRange: "$$$",
@@ -101,7 +101,7 @@ const LOCAL_BUSINESS_JSONLD = {
   makesOffer: [
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Balayage" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Blonding" } },
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Scalp Facial" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Scalp Wellness Treatments" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dermaplane Facial" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Brow & Lash Tint" } },
   ],
@@ -114,22 +114,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         title:
-          "Julia Marks Beauty | Luxury Hair Salon & Scalp Wellness in Spring Hill, TN",
+          "Julia Marks Beauty | Luxury Hair Salon & Scalp Wellness Treatments in Spring Hill, TN",
       },
       {
         name: "description",
         content:
-          "Luxury hair salon, balayage and blonding specialist, and scalp wellness studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville.",
+          "Luxury hair salon, balayage and blonding specialist, and scalp wellness treatments studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville.",
       },
       { name: "author", content: "Julia Marks Beauty" },
       {
         name: "keywords",
         content:
-          "luxury hair salon Spring Hill TN, balayage specialist, blonding specialist, scalp facial, scalp wellness, dimensional color, lived-in blonde hair, brunette balayage, healthy hair salon, hair color specialist, dermaplane facial, brow tint, lash tint, Franklin TN, Columbia TN, Nashville TN",
+          "luxury hair salon Spring Hill TN, balayage specialist, blonding specialist, scalp wellness treatments, dimensional color, lived-in blonde hair, brunette balayage, healthy hair salon, hair color specialist, dermaplane facial, brow tint, lash tint, Franklin TN, Columbia TN, Nashville TN",
       },
       {
         property: "og:title",
-        content: "Julia Marks Beauty | Luxury Hair & Scalp Wellness in Spring Hill, TN",
+        content: "Julia Marks Beauty | Luxury Hair & Scalp Wellness Treatments in Spring Hill, TN",
       },
       {
         property: "og:description",

@@ -184,8 +184,7 @@ function Index() {
         <div className="max-w-5xl mx-auto text-center">
           <span className="eyebrow block mb-6">Our Philosophy</span>
           <blockquote className="font-serif italic text-3xl md:text-5xl leading-tight text-balance">
-            “Beauty is an act of self-reverence. When we care for our scalp, skin,
-            and spirit, we invite a deeper sense of presence.”
+            “I believe beauty should feel effortless, intentional, and deeply personal. When you look good, you feel good and that salways my goal.”
           </blockquote>
         </div>
 

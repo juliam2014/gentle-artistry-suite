@@ -1,9 +1,4 @@
 import heroBlonde from "@/assets/gallery-blonde.jpg";
-import heroScalp from "@/assets/gallery-scalp.jpg";
-import heroBrunette from "@/assets/gallery-brunette.jpg";
-import heroSkin from "@/assets/gallery-skin.jpg";
-import heroRitual from "@/assets/ritual-flatlay.jpg";
-import heroSalon from "@/assets/hero-salon.jpg";
 
 export type BlogCategory =
   | "Hair Care"

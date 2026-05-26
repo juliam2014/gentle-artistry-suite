@@ -75,8 +75,8 @@ function Index() {
         </div>
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
           <span className="eyebrow mb-6 animate-fade-in">The Ritual of Being</span>
-          <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[15ch]">
-            Radiate from <em className="italic text-accent">within</em>
+          <h1 className="font-serif font-light text-6xl md:text-8xl leading-[1.05] text-balance animate-fade-up max-w-[20ch]">
+            Luxury Hair + Skin Services in <em className="italic text-accent">Spring Hill, TN</em>
           </h1>
           <p className="mt-8 max-w-xl text-lg text-foreground/70 font-light leading-relaxed animate-fade-up [animation-delay:200ms]">
             A boutique sanctuary for intentional beauty. I blend advanced scalp

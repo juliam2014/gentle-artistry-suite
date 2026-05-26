@@ -72,8 +72,8 @@ const LOCAL_BUSINESS_JSONLD = {
   image: "/og-image.jpg",
   description:
     "Luxury hair, scalp wellness treatments, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Balayage, blonding, scalp wellness treatments, and beauty + skincare services.",
-  telephone: "(615) 555-0142",
-  email: "hello@juliamarksbeauty.com",
+  telephone: "",
+  email: "juliamarksbeauty@gmail.com",
   priceRange: "$$$",
   address: {
     "@type": "PostalAddress",

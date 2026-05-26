@@ -34,23 +34,22 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "summer-hair-care-guide",
-    title: "How to Take Care of Your Hair in the Summer",
-    description:
-      "Sun, salt, chlorine, and heat can wreak havoc on your color and strands. A Spring Hill stylist's guide to keeping your hair healthy, hydrated, and tonally beautiful all summer long.",
+    title: "Summer Hair Care: How to Protect Your Hair From Pools, Chlorine & Green Tones",
+    description: "Summer means pool days, vacations, and fun in the sun but it can also be tough on your hair, especially if you’re spending time in chlorine or salt water.",
     category: "Hair Care",
     readingMinutes: 6,
     publishedAt: "2026-05-26",
     image: heroBlonde,
     imageAlt: "Summer hair care tips from a luxury hair salon in Spring Hill TN",
     body: [
-      { text: "Summer is hard on hair. Between UV rays, pool chemicals, ocean salt, and humidity, your color can fade and your strands can feel dry, brittle, and dull. The good news? A few intentional habits go a long way. Here's the summer hair care ritual I recommend to every client." },
-      { h2: "1. Protect Your Hair From UV Rays", text: "Just like your skin, your hair burns. UV exposure oxidizes color (hello, brassy blonde) and weakens the cuticle. Use a leave-in spray with UV protection daily, and wear a hat on long sun days." },
-      { h2: "2. Rinse Before You Swim", text: "Saturate your hair with clean water before getting in the pool or ocean. Hair that's already full of fresh water absorbs far less chlorine or salt — which means less damage and less color shift." },
-      { h2: "3. Use a Weekly Clarifying or Chelating Treatment", text: "Chlorine, minerals, and salt build up over the season and can turn blondes green or make brunettes look muddy. A gentle clarifying or chelating treatment once a week resets your strands without stripping color." },
-      { h2: "4. Deep Condition Twice a Week", text: "Summer calls for extra moisture. Swap one of your regular conditioners for a deep hydrating mask or bond-building treatment to keep hair soft, strong, and shiny." },
-      { h2: "5. Lower the Heat (Or Skip It)", text: "Summer is the perfect time to embrace air-drying, soft waves, slicked-back buns, and silk scarves. Less heat means less damage — and these effortless styles look beautiful in the season." },
-      { h2: "6. Book a Gloss + Treatment Mid-Summer", text: "A mid-summer gloss appointment refreshes tone, neutralizes any brassiness from the sun, and adds the shine that humidity tends to steal. Pair it with a bond-building treatment for the ultimate reset." },
-      { h2: "7. Don't Forget Your Scalp", text: "Your scalp gets sunburned too. Part your hair differently throughout the week, apply a scalp-safe SPF along your part on long outdoor days, and book a scalp treatment to rinse away sunscreen, sweat, and SPF buildup." },
+      { text: "Summer means pool days, vacations, and fun in the sun but it can also be tough on your hair, especially if you’re spending time in chlorine or salt water." },
+      { text: "If you’ve ever noticed your hair feeling dry, turning brassy, or even taking on a green tint after swimming, you’re not alone. This is extremely common specially for blondes and color-treated hair." },
+      { text: "Here’s how to protect your hair all summer long." },
+      { h2: "Why Pools Turn Hair Dry or Green", text: "Chlorine is designed to clean pools, but it also strips your hair of its natural oils. This leaves hair dry, rough, and more porous." },
+      { text: "When hair is porous (especially blonde or lightened hair), it can absorb minerals like copper from pool water. This is what can cause that unwanted greenish tint." },
+      { h2: "How to Prevent Chlorine Damage", text: "The best protection starts before you get in the pool:\n\n* Wet your hair with clean water first (this reduces how much chlorine it absorbs)\n* Apply a leave-in conditioner or lightweight oil as a barrier\n* Braid your hair or keep it up to limit exposure\n\nThink of it like prepping your hair before it hits the water." },
+      { h2: "After Swimming Care Routine", text: "What you do after the pool matters just as much:\n\n* Rinse your hair immediately with fresh water\n* Use a gentle, clarifying shampoo 1–2 times a week (not daily)\n* Follow with a deep conditioning treatment to restore moisture\n\nIf your hair feels dry or tangly after swimming, don’t ignore it; rehydration is key." },
+      { h2: "How to Fix Green or Brassy Pool Hair", text: "If your hair already has a green tint:\n\n* Use a clarifying shampoo first\n* Follow with a professional toner or purple shampoo (for blondes)\n* In more stubborn cases, a salon treatment may be needed to fully correct it\n\nPrevention is always easier than correction but it is fixable." },
     ],
   },
 ];

@@ -6,13 +6,13 @@ import { scalpAddons } from "@/lib/services-data";
 export const Route = createFileRoute("/services/scalp")({
   head: () => ({
     meta: [
-      { title: "Scalp Add-Ons — Julia Marks Beauty" },
+      { title: "Scalp Wellness Treatments — Julia Marks Beauty" },
       {
         name: "description",
         content:
           "Scalp + shampoo upgrades: scalp reset, luxury shampoo experience, and healthy hair growth boost. Add to any hair appointment in Spring Hill, TN.",
       },
-      { property: "og:title", content: "Scalp Add-Ons — Julia Marks Beauty" },
+      { property: "og:title", content: "Scalp Wellness Treatments — Julia Marks Beauty" },
       {
         property: "og:description",
         content: "Elevate your wash experience with therapeutic scalp upgrades.",

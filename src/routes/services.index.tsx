@@ -8,13 +8,13 @@ export const Route = createFileRoute("/services/")({
       {
         name: "description",
         content:
-          "Hair services, scalp + shampoo add-ons, and esthetic services in Spring Hill, TN. Choose the experience that fits your visit.",
+          "Hair services, scalp wellness treatments, and esthetic services in Spring Hill, TN. Choose the experience that fits your visit.",
       },
       { property: "og:title", content: "Services — Julia Marks Beauty" },
       {
         property: "og:description",
         content:
-          "Three curated menus: Hair Services, Scalp Add-Ons, and Esthetic Services.",
+          "Three curated menus: Hair Services, Scalp Wellness Treatments, and Esthetic Services.",
       },
     ],
   }),
@@ -33,10 +33,10 @@ const categories = [
   {
     to: "/services/scalp" as const,
     eyebrow: "Scalp",
-    title: "Scalp Add-Ons",
+    title: "Scalp Wellness Treatments",
     description:
       "Therapeutic scalp + shampoo upgrades. Reset buildup, melt tension, and support healthier hair from the root.",
-    cta: "Explore Scalp Add-Ons",
+    cta: "Explore Scalp Wellness Treatments",
   },
   {
     to: "/services/esthetics" as const,

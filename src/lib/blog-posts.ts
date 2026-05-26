@@ -58,7 +58,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { h2: "7. Don't Forget Your Scalp", text: "Your scalp gets sunburned too. Part your hair differently throughout the week, apply a scalp-safe SPF along your part on long outdoor days, and book a scalp treatment to rinse away sunscreen, sweat, and SPF buildup." },
     ],
   },
-
+  {
     slug: "how-to-maintain-healthy-blonde-hair",
     title: "How to Maintain Healthy Blonde Hair Between Appointments",
     description:

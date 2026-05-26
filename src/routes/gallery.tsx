@@ -31,7 +31,7 @@ const items = [
   { img: galleryBlonde, label: "Honey Balayage" },
   { img: galleryBrunette, label: "Dimensional Brunette" },
   { img: galleryScalp, label: "heavy blonding" },
-  { img: gallerySkin, label: "Glow Facial" },
+  { img: gallerySkin, label: "Blonding and tonal refresh" },
   { img: productBrush, label: "Finishing Touch" },
   { img: ritualFlatlay, label: "After Care Ritual" },
 ];

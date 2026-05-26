@@ -12,21 +12,21 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Luxury Hair Salon & Scalp Wellness in Spring Hill, TN | Julia Marks Beauty",
+          "Luxury Hair Salon & Scalp Wellness Treatments in Spring Hill, TN | Julia Marks Beauty",
       },
       {
         name: "description",
         content:
-          "Boutique luxury hair salon, balayage & blonding specialist, and scalp wellness studio in Spring Hill, TN. Serving Franklin, Columbia & Nashville with custom dimensional color, scalp facials, and luxury esthetic services.",
+          "Boutique luxury hair salon, balayage & blonding specialist, and scalp wellness studio in Spring Hill, TN. Serving Franklin, Columbia & Nashville with custom dimensional color, scalp wellness treatments, and luxury esthetic services.",
       },
       {
         property: "og:title",
-        content: "Luxury Hair Salon & Scalp Wellness | Spring Hill, TN",
+        content: "Luxury Hair Salon & Scalp Wellness Treatments | Spring Hill, TN",
       },
       {
         property: "og:description",
         content:
-          "Custom balayage, blonding, scalp facials, and beauty services in Spring Hill, TN.",
+          "Custom balayage, blonding, scalp wellness treatments, and beauty services in Spring Hill, TN.",
       },
       { property: "og:image", content: juliaEditorial1 },
       { property: "og:url", content: "/" },
@@ -133,7 +133,7 @@ function Index() {
 
               <div className="space-y-6 text-foreground/70 leading-relaxed max-w-xl">
                 <p>
-                  Hi, I'm Julia a beauty artist, scalp wellness enthusiast, and the founder of this studio.
+                  Hi, I'm Julia a beauty artist, scalp wellness treatment enthusiast, and the founder of this studio.
                   My journey started with a simple belief: that every person who sits in my chair deserves
                   to feel seen, cared for, and genuinely radiant.
                 </p>
@@ -197,8 +197,8 @@ function Index() {
             },
             {
               n: "02",
-              title: "Scalp Wellness",
-              text: "Therapeutic scalp facials and treatments that build the foundation of long-term hair health.",
+              title: "Scalp Wellness Treatments",
+              text: "Therapeutic scalp wellness treatments that build the foundation of long-term hair health.",
             },
             {
               n: "03",

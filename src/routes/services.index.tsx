@@ -27,7 +27,7 @@ const categories = [
     eyebrow: "Hair",
     title: "Hair Services",
     description:
-      "Color, blonding, brunette dimension, gloss, and transformations — booked based on how long it's been since your last visit.",
+      "Luxury blonding, dimensional color, balayage, glossing, and customized hair transformations in Spring Hill, TN. Booked based on your maintenance needs and time since your last service.",
     cta: "Explore Hair Services",
   },
   {

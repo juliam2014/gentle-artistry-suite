@@ -30,7 +30,7 @@ const items = [
   { img: juliaEditorial2, label: "Behind the Chair" },
   { img: galleryBlonde, label: "Honey Balayage" },
   { img: galleryBrunette, label: "Dimensional Brunette" },
-  { img: galleryScalp, label: "Scalp Detox" },
+  { img: galleryScalp, label: "heavy blonding" },
   { img: gallerySkin, label: "Glow Facial" },
   { img: productBrush, label: "Finishing Touch" },
   { img: ritualFlatlay, label: "After Care Ritual" },

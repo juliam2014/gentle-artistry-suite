@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
-import galleryBlonde from "/3d35bc30-57b1-48e7-a442-9c9c4da3aee3.jpg";
+import galleryBlonde from "@/assets/gallery-blonde.jpg";
 import galleryBrunette from "/bc63465d-24a1-4f63-9cc4-6ee86ab3fed7.jpg";
 import gallerySkin from "/d676a793-910d-47af-979f-ca8ff288b83e.jpg";
 import galleryScalp from "/7d38846f-5dd7-4cbf-9577-7561fb56fefb.jpg";

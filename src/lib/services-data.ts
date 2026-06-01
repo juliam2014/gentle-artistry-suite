@@ -123,7 +123,7 @@ export const hairAppointments = [
   },
   {
     icon: "🌟",
-    timing: "4–6 weeks since your last visit",
+    timing: "6-12 weeks since your last visit",
     title: "Mini Blonding / Bronding Refresh",
     price: "$190",
     intro:

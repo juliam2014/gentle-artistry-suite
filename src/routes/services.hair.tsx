@@ -10,7 +10,7 @@ export const Route = createFileRoute("/services/hair")({
       {
         name: "description",
         content:
-          "Hair color, blonding, brunette dimension, gloss, and transformation services in Spring Hill, TN. Book based on how long it's been since your last visit.",
+          "Hair color, blonding, brunette dimension, gloss, and transformation services in Spring Hill, TN. Book based on your hair goals.",
       },
       { property: "og:title", content: "Hair Services — Julia Marks Beauty" },
       {

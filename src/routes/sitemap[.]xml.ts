@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+const BASE_URL = "https://juliamarksbeauty.com";
 
 import { BLOG_POSTS } from "@/lib/blog-posts";
 
@@ -9,8 +9,10 @@ const staticEntries = [
   { path: "/", priority: "1.0", changefreq: "weekly" as const },
   { path: "/about", priority: "0.8", changefreq: "monthly" as const },
   { path: "/services", priority: "0.9", changefreq: "monthly" as const },
+  { path: "/services/hair", priority: "0.9", changefreq: "monthly" as const },
+  { path: "/services/scalp", priority: "0.9", changefreq: "monthly" as const },
+  { path: "/services/esthetics", priority: "0.9", changefreq: "monthly" as const },
   { path: "/booking", priority: "0.9", changefreq: "weekly" as const },
-  { path: "/shop", priority: "0.9", changefreq: "weekly" as const },
   { path: "/gallery", priority: "0.7", changefreq: "monthly" as const },
   { path: "/contact", priority: "0.6", changefreq: "monthly" as const },
   { path: "/blog", priority: "0.9", changefreq: "weekly" as const },

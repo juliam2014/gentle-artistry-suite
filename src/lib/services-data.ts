@@ -24,13 +24,13 @@ export const hairAppointments = [
       "An All-Over Color service is a single-process color designed to enhance, deepen, or shift your natural shade from roots to ends for a rich, consistent result. This service is ideal for guests who want one cohesive tone rather than dimension or highlighting. Whether you're going darker, refreshing faded color, covering grays, or enhancing your natural brunette, this service creates a polished, glossy finish with even saturation and shine throughout the hair. Each appointment is customized based on your hair history, desired tone, and maintenance goals to ensure the result looks healthy, dimensional in its richness, and beautifully blended.",
     bestFor: [
       "Want one solid, even color from root to ends",
-      "Are covering or blending gray hair",
+      "​",
       "Prefer a deeper, richer brunette or soft tonal shift",
-      "Want low-maintenance color with no highlight upkeep",
+      "​",
       "Are refreshing faded or uneven existing color",
       "Prefer a polished, glossy, one-tone finish",
       "Are going darker or enhancing their natural base",
-      "Don't want dimension or lightness in their hair",
+      "​",
     ],
     includes: [
       "Full application of permanent or demi-permanent color",

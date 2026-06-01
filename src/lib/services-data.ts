@@ -34,7 +34,7 @@ export const hairAppointments = [
       "Treatment for hair health",
       "Blowout finish",
     ],
-    note: "Most booked blonding service",
+    note: "​",
   },
   {
     icon: "✨",

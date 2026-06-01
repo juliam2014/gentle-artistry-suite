@@ -17,7 +17,7 @@ export const hairAppointments = [
   },
   {
     icon: "🤍",
-    timing: "8–14 weeks since your last visit",
+    timing: "8–12 weeks since your last visit",
     title: "​Partial Highlight",
     price: "$230",
     intro:

@@ -58,6 +58,27 @@ export const hairAppointments = [
     note: "Complete blonding transformation",
   },
   {
+    icon: "🌾",
+    timing: "10–14 weeks since your last visit",
+    title: "Lived-In Blonde",
+    price: "$265",
+    intro:
+      "A soft, sun-kissed blonde designed to grow out beautifully with low maintenance. Perfect for clients who want a natural, effortless look that blends seamlessly as it grows.",
+    bestFor: [
+      "Low-maintenance blonde lovers",
+      "Soft, natural-looking dimension",
+      "Seamless grow-out with no harsh lines",
+      "Clients who stretch appointments longer",
+    ],
+    includes: [
+      "Hand-painted balayage placement",
+      "Gloss / toner",
+      "Treatment for hair health",
+      "Blowout finish",
+    ],
+    note: "Best for a natural, grown-in blonde look",
+  },
+  {
     icon: "🤎",
     timing: "8–14 weeks (brunettes)",
     title: "Bronding  (Brunette Dimension + Gloss)",

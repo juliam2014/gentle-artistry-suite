@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LocalServicePage } from "@/components/site/LocalServicePage";
 import heroImage from "@/assets/gallery-blonde.jpg";
 
-const TITLE = "Balayage in Spring Hill, TN | Lived-In Blonde & Brunette Color";
+const TITLE = "Balayage in Spring Hill, TN | Lived-In Blonde & Brunette";
 const DESCRIPTION =
-  "Luxury balayage specialist in Spring Hill, TN. Custom hand-painted, lived-in dimensional color for blondes and brunettes — serving Franklin, Columbia & Nashville.";
+  "Luxury balayage in Spring Hill, TN. Hand-painted, lived-in color for blondes and brunettes — serving Franklin, Columbia & Nashville.";
 
 export const Route = createFileRoute("/balayage-spring-hill-tn")({
   head: () => ({

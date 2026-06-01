@@ -72,7 +72,6 @@ const LOCAL_BUSINESS_JSONLD = {
   image: "/og-image.jpg",
   description:
     "Luxury hair, scalp wellness treatments, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Balayage, blonding, scalp wellness treatments, and beauty + skincare services.",
-  telephone: "",
   email: "juliamarksbeauty@gmail.com",
   priceRange: "$$$",
   address: {
@@ -114,13 +113,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "google-site-verification", content: "Ur5Ka7jXUZ2-1gnstOXcVrrhlVQxPggOk3y9LltyfL8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        title:
-          "Julia Marks Beauty | Luxury Hair Salon & Scalp Wellness Treatments in Spring Hill, TN",
+        title: "Julia Marks Beauty | Luxury Hair & Scalp in Spring Hill, TN",
       },
       {
         name: "description",
         content:
-          "Luxury hair salon, balayage and blonding specialist, and scalp wellness treatments studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville.",
+          "Luxury hair, balayage, blonding, and scalp wellness studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville.",
       },
       { name: "author", content: "Julia Marks Beauty" },
       {
@@ -130,10 +128,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:title",
-        content: "Julia Marks Beauty | Luxury Hair & Scalp Wellness Treatments in Spring Hill, TN",
+        content: "Julia Marks Beauty | Luxury Hair & Scalp in Spring Hill, TN",
       },
       {
         property: "og:description",
+        content:
+          "Hair artistry, scalp wellness, and esthetic services in a boutique sanctuary serving Spring Hill, Franklin, Columbia, and Nashville, TN.",
+      },
+      {
+        name: "twitter:description",
         content:
           "Hair artistry, scalp wellness, and esthetic services in a boutique sanctuary serving Spring Hill, Franklin, Columbia, and Nashville, TN.",
       },
@@ -144,12 +147,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { name: "geo.region", content: "US-TN" },
       { name: "geo.placename", content: "Spring Hill, Tennessee" },
-      { title: "Lovable App" },
-      { property: "og:title", content: "Lovable App" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "description", content: "Julia Marks Beauty offers luxury hair, scalp, and skincare services, plus curated beauty products." },
-      { property: "og:description", content: "Julia Marks Beauty offers luxury hair, scalp, and skincare services, plus curated beauty products." },
-      { name: "twitter:description", content: "Julia Marks Beauty offers luxury hair, scalp, and skincare services, plus curated beauty products." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/98b0fe44-f713-49f8-a01c-56ce5b5ca848/id-preview-89911ec5--142da213-44bc-4025-b8d9-4d89965e28ad.lovable.app-1780276958902.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/98b0fe44-f713-49f8-a01c-56ce5b5ca848/id-preview-89911ec5--142da213-44bc-4025-b8d9-4d89965e28ad.lovable.app-1780276958902.png" },
     ],

@@ -28,8 +28,8 @@ function HairServicesPage() {
     <>
       <PageHeader
         eyebrow="Hair Services"
-        title="Book based on you current hair goals"
-        description="​Dont worry about selecting perfectly... we'll customize everything during your consultation."
+        title="Hair Services & Custom Color"
+        description="​Don't worry about selecting perfectly — we'll customize everything during your consultation."
       />
 
       <section className="px-6 lg:px-8 pb-24 md:pb-32">

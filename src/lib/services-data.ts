@@ -21,7 +21,7 @@ export const hairAppointments = [
     title: "All-Over Color",
     price: "$195",
     intro:
-      "An All-Over Color service is a single-process color designed to enhance, deepen, or shift your natural shade from roots to ends for a rich, consistent result. This service is ideal for guests who want one cohesive tone rather than dimension or highlighting. Whether you're going darker, refreshing faded color, covering grays, or enhancing your natural brunette, this service creates a polished, glossy finish with even saturation and shine throughout the hair. Each appointment is customized based on your hair history, desired tone, and maintenance goals to ensure the result looks healthy, dimensional in its richness, and beautifully blended.",
+      "An All-Over Color service is a single-process color designed to enhance, deepen, or shift your natural shade from roots to ends for a rich, consistent result. Whether you're going darker, refreshing faded color, covering grays, or enhancing your natural brunette, this service creates a polished, glossy finish with even saturation and shine throughout the hair.",
     bestFor: [
       "Want one solid, even color from root to ends",
       "Prefer a deeper, richer brunette or soft tonal shift",

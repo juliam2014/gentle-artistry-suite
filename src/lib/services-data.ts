@@ -122,6 +122,27 @@ export const hairAppointments = [
     ],
   },
   {
+    icon: "🌟",
+    timing: "4–6 weeks since your last visit",
+    title: "Mini Blonding or Bronding Refresh",
+    price: "$150",
+    intro:
+      "A quick refresh service designed to brighten the face-framing pieces and add a few extra dimensional highlights or lowlights between your bigger color appointments. Perfect for stretching the life of your blonding or bronding without committing to a full appointment.",
+    bestFor: [
+      "Brightening face-framing pieces between appointments",
+      "Adding a touch of dimension without a full highlight",
+      "Refreshing your blonde or bronde in a short visit",
+      "Stretching time between bigger color services",
+    ],
+    includes: [
+      "Mini foil placement around the face and part",
+      "Gloss or toner for tone and shine",
+      "Treatment for hair health",
+      "Blowout finish",
+    ],
+    note: "Great in-between maintenance service",
+  },
+  {
     icon: "💎",
     timing: "4–10 weeks",
     title: "Gloss + Refresh + Blowout",

@@ -125,7 +125,7 @@ export const hairAppointments = [
     icon: "🌟",
     timing: "4–6 weeks since your last visit",
     title: "Mini Blonding / Bronding Refresh",
-    price: "$150",
+    price: "$190",
     intro:
       "A Mini Blonding or Bronding Refresh is a quick maintenance service designed to brighten the face and revive tone without a full highlight or color appointment. This service focuses on face-framing brightness and a gloss/toner to restore shine, dimension, and freshness.",
     bestFor: [

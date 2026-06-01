@@ -37,6 +37,27 @@ export const hairAppointments = [
     note: "Most booked blonding service",
   },
   {
+    icon: "✨",
+    timing: "12–16 weeks since your last visit",
+    title: "Full Highlight",
+    price: "$285",
+    intro:
+      "Perfect if your color has grown out and you're ready to feel brighter and refreshed again.",
+    bestFor: [
+      "Lived-in blonde maintenance",
+      "Balayage or foils throughout",
+      "Full head brightness",
+      "Dimensional refresh or full blonde upkeep",
+    ],
+    includes: [
+      "Customized blonding (balayage / foils / dimension) throughout",
+      "Gloss / toner",
+      "Treatment for hair health",
+      "Haircut + blowout finish",
+    ],
+    note: "Complete blonding transformation",
+  },
+  {
     icon: "🤎",
     timing: "8–14 weeks (brunettes)",
     title: "Brunette Dimension + Gloss",

@@ -2,21 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageHeader } from "@/components/site/PageHeader";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Julia Marks Beauty" },
-      {
-        name: "description",
-        content:
-          "Visit the studio in Spring Hill, TN. Hours, contact form, FAQ, and booking inquiries.",
-      },
-      { property: "og:title", content: "Contact — Julia Marks Beauty" },
-    ],
-  }),
-  component: ContactPage,
-});
-
 const faqs = [
   {
     q: "What is your cancellation policy?",
@@ -35,6 +20,37 @@ const faqs = [
     a: "All services are by appointment to ensure each guest receives our full attention and care.",
   },
 ];
+
+const FAQ_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact — Julia Marks Beauty" },
+      {
+        name: "description",
+        content:
+          "Visit the studio in Spring Hill, TN. Hours, contact form, FAQ, and booking inquiries.",
+      },
+      { property: "og:title", content: "Contact — Julia Marks Beauty" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(FAQ_JSONLD),
+      },
+    ],
+  }),
+  component: ContactPage,
+});
 
 function ContactPage() {
   const [sent, setSent] = useState(false);

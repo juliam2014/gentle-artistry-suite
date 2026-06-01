@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LocalServicePage } from "@/components/site/LocalServicePage";
 import heroImage from "@/assets/gallery-blonde.jpg";
 
-const TITLE = "Blonding Specialist in Spring Hill, TN | Healthy Blonde Hair";
+const TITLE = "Blonding Specialist in Spring Hill, TN | Healthy Blondes";
 const DESCRIPTION =
-  "Spring Hill, TN blonding specialist for lived-in blondes, baby lights, and full blonding transformations. Healthy-hair color for women across Franklin, Columbia & Nashville.";
+  "Spring Hill, TN blonding specialist for lived-in blondes, baby lights, and healthy blonding transformations across Middle Tennessee.";
 
 export const Route = createFileRoute("/blonding-specialist-spring-hill-tn")({
   head: () => ({

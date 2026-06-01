@@ -1,0 +1,24 @@
+# Julia Marks Beauty
+
+> Luxury hair, scalp wellness, and esthetic studio in Spring Hill, TN — serving Franklin, Columbia, and Nashville. Specializing in balayage, blonding, brunette dimension, scalp facials, and skincare.
+
+## Pages
+
+- [Home](/): Studio overview, philosophy, and featured services.
+- [About](/about): Julia's story, training, and approach to luxury hair and skin.
+- [Services](/services): All hair, scalp, and esthetic services.
+- [Hair Services](/services/hair): Color, blonding, brunette, gloss, and transformations.
+- [Scalp Add-Ons](/services/scalp): Scalp wellness treatments and add-ons.
+- [Esthetic Services](/services/esthetics): Dermaplane facials, brow and lash tinting.
+- [Booking](/booking): Book an appointment.
+- [Gallery](/gallery): Color and transformation portfolio.
+- [Blog](/blog): Hair education, blonding, and scalp wellness articles.
+- [Contact](/contact): Studio address, hours, and contact form.
+
+## Local Services
+
+- [Balayage in Spring Hill, TN](/balayage-spring-hill-tn): Lived-in balayage for blondes and brunettes.
+- [Blonding Specialist in Spring Hill, TN](/blonding-specialist-spring-hill-tn): Healthy blonding and lift services.
+- [Scalp Facial in Spring Hill, TN](/scalp-facial-spring-hill-tn): Therapeutic scalp facials and wellness.
+- [Luxury Hair Salon in Spring Hill, TN](/luxury-hair-salon-spring-hill-tn): Full luxury salon experience.
+- [Hair & Esthetic Services in Spring Hill, TN](/hair-and-esthetic-services-spring-hill-tn): Combined hair and skincare services.

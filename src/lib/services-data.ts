@@ -16,6 +16,26 @@ export const hairAppointments = [
     note: "Best for regular maintenance guests",
   },
   {
+    icon: "🎨",
+    timing: "6–8 weeks since your last visit",
+    title: "All Over Color",
+    price: "$195",
+    intro:
+      "Perfect if you want a complete, rich color transformation from roots to ends.",
+    bestFor: [
+      "Full grey coverage",
+      "Changing your overall color",
+      "Rich, all-over color refresh",
+      "Deeper, more saturated results",
+    ],
+    includes: [
+      "All-over color application",
+      "Gloss for tone + shine",
+      "Blowout finish",
+    ],
+    note: "Complete color transformation",
+  },
+  {
     icon: "🤍",
     timing: "8–12 weeks since your last visit",
     title: "​Partial Highlight",

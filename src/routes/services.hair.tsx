@@ -10,7 +10,7 @@ export const Route = createFileRoute("/services/hair")({
       {
         name: "description",
         content:
-          "Hair color, blonding, brunette dimension, gloss, and transformation services in Spring Hill, TN. Book based on how long it's been since your last visit.",
+          "Hair color, blonding, brunette dimension, gloss, and transformation services in Spring Hill, TN. Book based on your hair goals.",
       },
       { property: "og:title", content: "Hair Services — Julia Marks Beauty" },
       {
@@ -28,8 +28,8 @@ function HairServicesPage() {
     <>
       <PageHeader
         eyebrow="Hair Services"
-        title="Book based on your last visit."
-        description="Choose based on how long it's been since your last color visit. If you're unsure, select the closest option — I'll adjust your service at your appointment."
+        title="Book based on you current hair goals"
+        description="​Dont worry about selecting perfectly... we'll customize everything during your consultation."
       />
 
       <section className="px-6 lg:px-8 pb-24 md:pb-32">

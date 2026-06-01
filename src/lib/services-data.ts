@@ -59,11 +59,11 @@ export const hairAppointments = [
   },
   {
     icon: "🌾",
-    timing: "10–14 weeks since your last visit",
+    timing: "Done 2-3 times a year",
     title: "Lived-In Blonde",
-    price: "$265",
+    price: "Starts at $250",
     intro:
-      "A soft, sun-kissed blonde designed to grow out beautifully with low maintenance. Perfect for clients who want a natural, effortless look that blends seamlessly as it grows.",
+      "A soft, sun-kissed blonde designed to grow out beautifully with low maintenance. Perfect for clients who want a natural, effortless look that blends seamlessly as it grows. Instead of all over bright blonde, this service builds contrast and softness in the right places .",
     bestFor: [
       "Low-maintenance blonde lovers",
       "Soft, natural-looking dimension",
@@ -76,7 +76,7 @@ export const hairAppointments = [
       "Treatment for hair health",
       "Blowout finish",
     ],
-    note: "Best for a natural, grown-in blonde look",
+    note: "most booked service",
   },
   {
     icon: "🤎",

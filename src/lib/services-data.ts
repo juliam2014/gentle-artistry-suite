@@ -5,7 +5,7 @@ export const hairAppointments = [
     title: "Root Refresh + Grey Coverage",
     price: "$140",
     intro:
-      "Perfect if you're keeping up with your color and just need a maintenance touch-up.",
+      "​This service is perfect for retouching new growth only and a refresh gloss for the ends. This service is ideal for clients who have been within the last 6-9 weeks.",
     bestFor: [
       "Grey coverage at the root",
       "Blending new growth",

@@ -3,7 +3,7 @@ export const hairAppointments = [
     icon: "✨",
     timing: "6–8 weeks since your last visit",
     title: "Root Refresh + Grey Coverage",
-    price: "$150–$175",
+    price: "$140",
     intro:
       "Perfect if you're keeping up with your color and just need a maintenance touch-up.",
     bestFor: [

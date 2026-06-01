@@ -60,9 +60,9 @@ export const hairAppointments = [
   {
     icon: "🤎",
     timing: "8–14 weeks (brunettes)",
-    title: "Brunette Dimension + Gloss",
-    price: "$225–$275",
-    intro: "Perfect if you want rich, glossy, dimensional brunette color.",
+    title: "Bronding  (Brunette Dimension + Gloss)",
+    price: "$250",
+    intro: "Perfect if youre a brunette  wanting  some dimension through your hair. Customizing your appointment to find the perfect bronde color for you. Think goldne, caramel or beige tones to enhance your natural color. This service typically takes 3 hours.",
     bestFor: [
       "Refreshing faded brunette tones",
       "Adding shine + richness",
@@ -72,7 +72,7 @@ export const hairAppointments = [
     includes: [
       "Custom color placement or gloss refresh",
       "Conditioning treatment",
-      "Haircut + blowout finish",
+      "Blowout finish",
     ],
   },
   {

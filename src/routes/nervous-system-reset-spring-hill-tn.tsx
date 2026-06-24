@@ -43,11 +43,6 @@ export const Route = createFileRoute("/nervous-system-reset-spring-hill-tn")({
           body:
             "• Scalp massage and sensory hair play techniques\n• Gentle touch relaxation for scalp, neck, and temple areas\n• Soft brushing and calming rhythmic movements\n• Warm towel grounding moment\n• Quiet, low-stimulation environment (optional silence or soft music)\n• Slow integration time before ending the service",
         },
-        {
-          h2: "Booking notes",
-          body:
-            "• Private appointment-only studio\n• Please arrive on time — late arrivals may reduce service time\n• No-shows or late cancellations may be charged per policy",
-        },
       ]}
       benefits={[
         "Stress relief and nervous system regulation",

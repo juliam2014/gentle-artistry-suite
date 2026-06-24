@@ -5,7 +5,7 @@ import heroImage from "@/assets/gallery-scalp.jpg";
 const TITLE =
   "Nervous System Reset | Scalp & Sensory Relaxation Treatment in Spring Hill, TN";
 const DESCRIPTION =
-  "A 45-minute private scalp and sensory relaxation treatment in Spring Hill, TN. $120. Designed for nervous system regulation, stress relief, and deep relaxation.";
+  "A 60-minute private scalp and sensory relaxation treatment in Spring Hill, TN. $120. Designed for nervous system regulation, stress relief, and deep relaxation.";
 const KEYWORDS =
   "nervous system reset, scalp massage Spring Hill TN, relaxation treatment Tennessee, sensory scalp treatment, stress relief beauty service, private beauty studio Spring Hill";
 
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/nervous-system-reset-spring-hill-tn")({
       pathname="/nervous-system-reset-spring-hill-tn"
       eyebrow="Nervous System Reset • Spring Hill, TN"
       h1="Nervous System Reset | Scalp & Sensory Relaxation Treatment"
-      intro="A calming, sensory-based scalp and relaxation treatment in Spring Hill, Tennessee designed to support nervous system regulation, stress relief, and deep relaxation. 45 minutes • $120\u00a0"
+      intro="A calming, sensory-based scalp and relaxation treatment in Spring Hill, Tennessee designed to support nervous system regulation, stress relief, and deep relaxation. 60 minutes • $120\u00a0"
       heroImage={heroImage}
       heroAlt="Calming scalp and sensory relaxation treatment in a private Spring Hill TN studio"
       cta="Book Your Nervous System Reset"
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/nervous-system-reset-spring-hill-tn")({
             "This private one-on-one experience combines gentle scalp stimulation, hair play techniques, light pressure point work, and soothing touch-based rituals to help release tension and promote a grounded, relaxed state.\n\nUnlike a traditional facial or salon service, this experience is focused on nervous system reset, relaxation, and sensory comfort — making it ideal for clients seeking stress relief and a restorative beauty experience.",
         },
         {
-          h2: "What's included in your 45-minute treatment",
+          h2: "What's included in your 60-minute treatment",
           body:
             "• Scalp massage and sensory hair play techniques\n• Gentle touch relaxation for scalp, neck, and temple areas\n• Soft brushing and calming rhythmic movements\n• Warm towel grounding moment\n• Calming eye mask\n• Fingertip touch techniques\n• Quiet, low-stimulation environment (optional silence or soft music)\n• Slow integration time before ending the service",
         },
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/nervous-system-reset-spring-hill-tn")({
         "Scalp massage and relaxation treatment in Spring Hill, TN",
         "A calming alternative to traditional facials or salon services",
         "Private, low-stimulation studio environment",
-        "45 minutes of slow, intentional sensory care",
+        "60 minutes of slow, intentional sensory care",
       ]}
       faqs={[
         {
@@ -59,11 +59,11 @@ export const Route = createFileRoute("/nervous-system-reset-spring-hill-tn")({
         },
         {
           q: "How is this different from a facial or scalp facial?",
-          a: "A scalp facial focuses on scalp health and hair growth. The Nervous System Reset is focused on relaxation, stress relief, and sensory comfort. There are no harsh exfoliants, no styling, and no expectation to talk — just a quiet, grounding 45 minutes.",
+          a: "A scalp facial focuses on scalp health and hair growth. The Nervous System Reset is focused on relaxation, stress relief, and sensory comfort. There are no harsh exfoliants, no styling, and no expectation to talk — just a quiet, grounding 60 minutes.",
         },
         {
           q: "How long does it take and how much is it?",
-          a: "The treatment is 45 minutes and $120, performed in a private Spring Hill, TN studio by appointment only.",
+          a: "The treatment is 60 minutes and $120, performed in a private Spring Hill, TN studio by appointment only.",
         },
         {
           q: "Who is this best for?",

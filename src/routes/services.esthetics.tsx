@@ -104,7 +104,7 @@ function EstheticServicesPage() {
               <header className="space-y-2 border-b border-foreground/10 pb-5">
                 <p className="eyebrow flex items-center gap-2">
                   <span aria-hidden>🌙</span>
-                  <span>A calming sensory experience · 45 min</span>
+                  <span>A CALMING SENSORY EXPERIENCE · 60 MIN</span>
                 </p>
                 <h3 className="font-serif italic text-3xl md:text-4xl leading-tight">
                   Nervous System Reset

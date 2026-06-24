@@ -237,11 +237,11 @@ export const estheticPackages = [
   },
   {
     icon: "👁️",
-    title: "Lifted Eyes Package",
-    price: "$115",
-    tagline: "Mascara-free, lifted, and darker lashes",
-    includes: ["Lash lift", "Lash tint"],
-    bestFor: "Clients wanting long-lasting curl and eye definition without makeup.",
+    title: "Full Brow Transformation",
+    price: "$120",
+    tagline: "EYE BROW PENCIL FREE\u00a0",
+    includes: ["Brow lamintaion", "Brow tint and brow shaping"],
+    bestFor: "Clients with sparse or uneven brows, wanting fuller and fluffier brows, or lack structure",
   },
   {
     icon: "✨",

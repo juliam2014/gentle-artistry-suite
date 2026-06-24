@@ -4,7 +4,7 @@ export const BUSINESS = {
   region: "Tennessee",
   regionShort: "TN",
   serviceAreas: ["Spring Hill, TN", "Franklin, TN", "Columbia, TN", "Nashville, TN"],
-  phone: "(615) 555-0142",
+  phone: "910-494-9601",
   email: "hello@juliamarksbeauty.com",
   street: "1010 Crossings Blvd, Suite 200",
   postalCode: "37174",

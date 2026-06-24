@@ -33,13 +33,14 @@ function AboutPage() {
       <section className="py-12 md:py-20 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
           <img
-            src={aboutPortrait}
-            alt="Founder Julia Marks in her boutique studio"
+            src={heroSalon}
+            alt="Julia Marks Beauty studio interior"
             width={900}
             height={1200}
             loading="lazy"
             className="w-full aspect-[3/4] object-cover"
           />
+
           <div className="space-y-6">
             <span className="eyebrow block">The Founder</span>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">

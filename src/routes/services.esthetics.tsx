@@ -99,15 +99,66 @@ function EstheticServicesPage() {
                 </div>
               </article>
             ))}
+
+            <article className="border border-foreground/10 bg-beige/20 p-8 md:p-10 space-y-5">
+              <header className="space-y-2 border-b border-foreground/10 pb-5">
+                <p className="eyebrow flex items-center gap-2">
+                  <span aria-hidden>🌙</span>
+                  <span>A calming sensory experience · 45 min</span>
+                </p>
+                <h3 className="font-serif italic text-3xl md:text-4xl leading-tight">
+                  Nervous System Reset
+                </h3>
+                <p className="text-2xl md:text-3xl font-serif">$120</p>
+              </header>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="eyebrow mb-3">Includes</p>
+                  <ul className="space-y-2 text-sm text-foreground/70">
+                    {[
+                      "Scalp massage + sensory hair play",
+                      "Gentle touch relaxation for scalp, neck, temples",
+                      "Soft brushing + rhythmic calming movements",
+                      "Warm towel grounding moment",
+                      "Quiet, low-stimulation environment",
+                    ].map((i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="text-accent">—</span>
+                        <span>{i}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="eyebrow mb-3">Best for</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Anyone navigating stress, anxiety, burnout, or overstimulation —
+                    a calming alternative to a traditional facial or salon visit.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-foreground/10 flex justify-between items-center gap-4 flex-wrap">
+                <Link
+                  to="/nervous-system-reset-spring-hill-tn"
+                  className="text-[11px] uppercase tracking-luxe border-b border-foreground/30 hover:border-accent hover:text-accent transition-colors pb-1"
+                >
+                  Learn more →
+                </Link>
+                <a
+                  href={VAGARO_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors"
+                >
+                  Book this service →
+                </a>
+              </div>
+            </article>
           </div>
 
           <div className="flex justify-center gap-6 flex-wrap pt-12">
-            <Link
-              to="/nervous-system-reset-spring-hill-tn"
-              className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors pb-1"
-            >
-              Nervous System Reset (45 min · $120) →
-            </Link>
             <Link
               to="/services/hair"
               className="text-[11px] uppercase tracking-luxe border-b border-foreground/30 hover:border-accent hover:text-accent transition-colors pb-1"

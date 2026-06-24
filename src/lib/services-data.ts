@@ -266,7 +266,7 @@ export const estheticPackages = [
     title: "Signature Maintenance Stack",
     price: "$197",
     tagline: "Your routine maintenance beauty reset",
-    includes: ["Brow shaping + tint", "Lash tint", "Express dermaplane"],
+    includes: ["Brow shaping + tint\u00a0", "Hair play add on\u00a0", "Express dermaplane"],
     bestFor:
       "Regular clients maintaining a consistently polished, glowing look every 4–6 weeks.",
   },

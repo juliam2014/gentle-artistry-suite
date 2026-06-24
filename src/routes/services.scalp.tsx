@@ -104,6 +104,12 @@ function ScalpServicesPage() {
 
           <div className="flex justify-center gap-6 flex-wrap pt-8">
             <Link
+              to="/nervous-system-reset-spring-hill-tn"
+              className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors pb-1"
+            >
+              Nervous System Reset (45 min · $120) →
+            </Link>
+            <Link
               to="/services/hair"
               className="text-[11px] uppercase tracking-luxe border-b border-foreground/30 hover:border-accent hover:text-accent transition-colors pb-1"
             >

@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-facial-spring-hill-tn'
+import { Route as NervousSystemResetSpringHillTnRouteImport } from './routes/nervous-system-reset-spring-hill-tn'
 import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
 import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
 import { Route as GalleryRouteImport } from './routes/gallery'
@@ -43,6 +44,12 @@ const ScalpFacialSpringHillTnRoute = ScalpFacialSpringHillTnRouteImport.update({
   path: '/scalp-facial-spring-hill-tn',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NervousSystemResetSpringHillTnRoute =
+  NervousSystemResetSpringHillTnRouteImport.update({
+    id: '/nervous-system-reset-spring-hill-tn',
+    path: '/nervous-system-reset-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LuxuryHairSalonSpringHillTnRoute =
   LuxuryHairSalonSpringHillTnRouteImport.update({
     id: '/luxury-hair-salon-spring-hill-tn',
@@ -133,6 +140,7 @@ export interface FileRoutesByFullPath {
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/nervous-system-reset-spring-hill-tn': typeof NervousSystemResetSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -153,6 +161,7 @@ export interface FileRoutesByTo {
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/nervous-system-reset-spring-hill-tn': typeof NervousSystemResetSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -173,6 +182,7 @@ export interface FileRoutesById {
   '/gallery': typeof GalleryRoute
   '/hair-and-esthetic-services-spring-hill-tn': typeof HairAndEstheticServicesSpringHillTnRoute
   '/luxury-hair-salon-spring-hill-tn': typeof LuxuryHairSalonSpringHillTnRoute
+  '/nervous-system-reset-spring-hill-tn': typeof NervousSystemResetSpringHillTnRoute
   '/scalp-facial-spring-hill-tn': typeof ScalpFacialSpringHillTnRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -195,6 +205,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
+    | '/nervous-system-reset-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/sitemap.xml'
@@ -215,6 +226,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
+    | '/nervous-system-reset-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -234,6 +246,7 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/hair-and-esthetic-services-spring-hill-tn'
     | '/luxury-hair-salon-spring-hill-tn'
+    | '/nervous-system-reset-spring-hill-tn'
     | '/scalp-facial-spring-hill-tn'
     | '/services'
     | '/sitemap.xml'
@@ -255,6 +268,7 @@ export interface RootRouteChildren {
   GalleryRoute: typeof GalleryRoute
   HairAndEstheticServicesSpringHillTnRoute: typeof HairAndEstheticServicesSpringHillTnRoute
   LuxuryHairSalonSpringHillTnRoute: typeof LuxuryHairSalonSpringHillTnRoute
+  NervousSystemResetSpringHillTnRoute: typeof NervousSystemResetSpringHillTnRoute
   ScalpFacialSpringHillTnRoute: typeof ScalpFacialSpringHillTnRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -281,6 +295,13 @@ declare module '@tanstack/react-router' {
       path: '/scalp-facial-spring-hill-tn'
       fullPath: '/scalp-facial-spring-hill-tn'
       preLoaderRoute: typeof ScalpFacialSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nervous-system-reset-spring-hill-tn': {
+      id: '/nervous-system-reset-spring-hill-tn'
+      path: '/nervous-system-reset-spring-hill-tn'
+      fullPath: '/nervous-system-reset-spring-hill-tn'
+      preLoaderRoute: typeof NervousSystemResetSpringHillTnRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/luxury-hair-salon-spring-hill-tn': {
@@ -431,6 +452,7 @@ const rootRouteChildren: RootRouteChildren = {
   HairAndEstheticServicesSpringHillTnRoute:
     HairAndEstheticServicesSpringHillTnRoute,
   LuxuryHairSalonSpringHillTnRoute: LuxuryHairSalonSpringHillTnRoute,
+  NervousSystemResetSpringHillTnRoute: NervousSystemResetSpringHillTnRoute,
   ScalpFacialSpringHillTnRoute: ScalpFacialSpringHillTnRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -438,13 +460,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

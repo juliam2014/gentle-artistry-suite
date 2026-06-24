@@ -121,6 +121,8 @@ function EstheticServicesPage() {
                       "Gentle touch relaxation for scalp, neck, temples",
                       "Soft brushing + rhythmic calming movements",
                       "Warm towel grounding moment",
+                      "Calming eye mask",
+                      "Fingertip touch techniques",
                       "Quiet, low-stimulation environment",
                     ].map((i) => (
                       <li key={i} className="flex gap-2">

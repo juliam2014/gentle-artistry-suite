@@ -240,15 +240,15 @@ export const estheticPackages = [
     title: "Full Brow Transformation",
     price: "$120",
     tagline: "EYE BROW PENCIL FREE\u00a0",
-    includes: ["Brow lamintaion", "Brow tint and brow shaping"],
+    includes: ["Brow lamination", "Brow tint and brow shaping"],
     bestFor: "Clients with sparse or uneven brows, wanting fuller and fluffier brows, or lack structure",
   },
   {
     icon: "✨",
     title: "Full Face Refresh Package",
-    price: "$145",
+    price: "$160",
     tagline: "Complete eye + brow enhancement in one visit",
-    includes: ["Brow shaping", "Brow tint", "Lash lift", "Lash tint"],
+    includes: ["Brow shaping", "Brow tint", "Brow lamination", "Express dermaplane"],
     bestFor:
       "Clients wanting a full polished look with maximum impact and low daily effort.",
   },

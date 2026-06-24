@@ -240,7 +240,7 @@ export const estheticPackages = [
     title: "Full Brow Transformation",
     price: "$120",
     tagline: "EYE BROW PENCIL FREE\u00a0",
-    includes: ["Brow lamintaion", "Brow tint and brow shaping"],
+    includes: ["Brow lamination", "Brow tint and brow shaping"],
     bestFor: "Clients with sparse or uneven brows, wanting fuller and fluffier brows, or lack structure",
   },
   {

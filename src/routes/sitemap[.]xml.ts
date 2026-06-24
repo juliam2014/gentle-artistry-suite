@@ -21,6 +21,7 @@ const staticEntries = [
   { path: "/scalp-facial-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
   { path: "/luxury-hair-salon-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
   { path: "/hair-and-esthetic-services-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
+  { path: "/nervous-system-reset-spring-hill-tn", priority: "0.9", changefreq: "monthly" as const },
 ];
 
 const blogEntries = BLOG_POSTS.map((p) => ({

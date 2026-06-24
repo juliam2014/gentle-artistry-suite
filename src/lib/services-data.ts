@@ -246,7 +246,7 @@ export const estheticPackages = [
   {
     icon: "✨",
     title: "Full Face Refresh Package",
-    price: "$160",
+    price: "$165",
     tagline: "Complete eye + brow enhancement in one visit",
     includes: ["Brow shaping", "Brow tint", "Brow lamination", "Express dermaplane"],
     bestFor:
@@ -266,7 +266,7 @@ export const estheticPackages = [
     title: "Signature Maintenance Stack",
     price: "$197",
     tagline: "Your routine maintenance beauty reset",
-    includes: ["Brow shaping + tint", "Lash tint", "Express dermaplane"],
+    includes: ["Brow shaping + tint\u00a0", "Hair play add on\u00a0", "Express dermaplane"],
     bestFor:
       "Regular clients maintaining a consistently polished, glowing look every 4–6 weeks.",
   },

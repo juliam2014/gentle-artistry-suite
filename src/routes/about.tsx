@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/site/PageHeader";
-import aboutPortrait from "@/assets/about-portrait.jpg";
 import heroSalon from "@/assets/hero-salon.jpg";
 import ritualFlatlay from "@/assets/ritual-flatlay.jpg";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -14,7 +14,8 @@ export const Route = createFileRoute("/about")({
           "Meet the founder of Julia Marks Beauty — a beauty professional and mother passionate about helping women feel confident, radiant, and cared for.",
       },
       { property: "og:title", content: "About — Julia Marks Beauty" },
-      { property: "og:image", content: aboutPortrait },
+      { property: "og:image", content: heroSalon },
+
     ],
   }),
   component: AboutPage,
@@ -32,13 +33,14 @@ function AboutPage() {
       <section className="py-12 md:py-20 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
           <img
-            src={aboutPortrait}
-            alt="Founder Julia Marks in her boutique studio"
+            src={heroSalon}
+            alt="Julia Marks Beauty studio interior"
             width={900}
             height={1200}
             loading="lazy"
             className="w-full aspect-[3/4] object-cover"
           />
+
           <div className="space-y-6">
             <span className="eyebrow block">The Founder</span>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
@@ -88,11 +90,11 @@ function AboutPage() {
       </section>
 
       <section className="py-24 md:py-32 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img src={heroSalon} alt="Studio interior" loading="lazy" className="w-full aspect-square object-cover" />
-          <img src={ritualFlatlay} alt="Studio ritual flatlay" loading="lazy" className="w-full aspect-square object-cover" />
+        <div className="max-w-7xl mx-auto">
+          <img src={ritualFlatlay} alt="Studio ritual flatlay" loading="lazy" className="w-full aspect-[16/9] object-cover" />
         </div>
       </section>
+
 
       <section className="py-24 px-6 lg:px-8 text-center bg-foreground text-background">
         <h2 className="font-serif italic text-4xl md:text-5xl mb-8 max-w-2xl mx-auto leading-tight">

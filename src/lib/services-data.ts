@@ -246,7 +246,7 @@ export const estheticPackages = [
   {
     icon: "✨",
     title: "Full Face Refresh Package",
-    price: "$160",
+    price: "$165",
     tagline: "Complete eye + brow enhancement in one visit",
     includes: ["Brow shaping", "Brow tint", "Brow lamination", "Express dermaplane"],
     bestFor:

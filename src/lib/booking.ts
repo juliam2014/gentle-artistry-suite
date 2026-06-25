@@ -1,1 +1,1 @@
-export const VAGARO_BOOKING_URL = "https://us04.vagaro.com/merchants/calendar/v3";
+export const VAGARO_BOOKING_URL = "https://www.vagaro.com/juliamarksbeauty/services";

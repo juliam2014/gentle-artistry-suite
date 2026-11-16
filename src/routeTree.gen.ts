@@ -9,72 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-facial-spring-hill-tn'
-import { Route as NervousSystemResetSpringHillTnRouteImport } from './routes/nervous-system-reset-spring-hill-tn'
-import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
-import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
-import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as BookingRouteImport } from './routes/booking'
-import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
-import { Route as BlogRouteImport } from './routes/blog'
-import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ServicesIndexRouteImport } from './routes/services.index'
-import { Route as ServicesScalpRouteImport } from './routes/services.scalp'
-import { Route as ServicesHairRouteImport } from './routes/services.hair'
-import { Route as ServicesEstheticsRouteImport } from './routes/services.esthetics'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BalayageSpringHillTnRouteImport } from './routes/balayage-spring-hill-tn'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as BlondingSpecialistSpringHillTnRouteImport } from './routes/blonding-specialist-spring-hill-tn'
+import { Route as BookingRouteImport } from './routes/booking'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as HairAndEstheticServicesSpringHillTnRouteImport } from './routes/hair-and-esthetic-services-spring-hill-tn'
+import { Route as LuxuryHairSalonSpringHillTnRouteImport } from './routes/luxury-hair-salon-spring-hill-tn'
+import { Route as NervousSystemResetSpringHillTnRouteImport } from './routes/nervous-system-reset-spring-hill-tn'
+import { Route as ScalpFacialSpringHillTnRouteImport } from './routes/scalp-facial-spring-hill-tn'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ServicesEstheticsRouteImport } from './routes/services.esthetics'
+import { Route as ServicesHairRouteImport } from './routes/services.hair'
+import { Route as ServicesScalpRouteImport } from './routes/services.scalp'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ScalpFacialSpringHillTnRoute = ScalpFacialSpringHillTnRouteImport.update({
-  id: '/scalp-facial-spring-hill-tn',
-  path: '/scalp-facial-spring-hill-tn',
+const BalayageSpringHillTnRoute = BalayageSpringHillTnRouteImport.update({
+  id: '/balayage-spring-hill-tn',
+  path: '/balayage-spring-hill-tn',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NervousSystemResetSpringHillTnRoute =
-  NervousSystemResetSpringHillTnRouteImport.update({
-    id: '/nervous-system-reset-spring-hill-tn',
-    path: '/nervous-system-reset-spring-hill-tn',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LuxuryHairSalonSpringHillTnRoute =
-  LuxuryHairSalonSpringHillTnRouteImport.update({
-    id: '/luxury-hair-salon-spring-hill-tn',
-    path: '/luxury-hair-salon-spring-hill-tn',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const HairAndEstheticServicesSpringHillTnRoute =
-  HairAndEstheticServicesSpringHillTnRouteImport.update({
-    id: '/hair-and-esthetic-services-spring-hill-tn',
-    path: '/hair-and-esthetic-services-spring-hill-tn',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BookingRoute = BookingRouteImport.update({
-  id: '/booking',
-  path: '/booking',
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlondingSpecialistSpringHillTnRoute =
@@ -83,39 +55,62 @@ const BlondingSpecialistSpringHillTnRoute =
     path: '/blonding-specialist-spring-hill-tn',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
+const BookingRoute = BookingRouteImport.update({
+  id: '/booking',
+  path: '/booking',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BalayageSpringHillTnRoute = BalayageSpringHillTnRouteImport.update({
-  id: '/balayage-spring-hill-tn',
-  path: '/balayage-spring-hill-tn',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const HairAndEstheticServicesSpringHillTnRoute =
+  HairAndEstheticServicesSpringHillTnRouteImport.update({
+    id: '/hair-and-esthetic-services-spring-hill-tn',
+    path: '/hair-and-esthetic-services-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LuxuryHairSalonSpringHillTnRoute =
+  LuxuryHairSalonSpringHillTnRouteImport.update({
+    id: '/luxury-hair-salon-spring-hill-tn',
+    path: '/luxury-hair-salon-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const NervousSystemResetSpringHillTnRoute =
+  NervousSystemResetSpringHillTnRouteImport.update({
+    id: '/nervous-system-reset-spring-hill-tn',
+    path: '/nervous-system-reset-spring-hill-tn',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ScalpFacialSpringHillTnRoute = ScalpFacialSpringHillTnRouteImport.update({
+  id: '/scalp-facial-spring-hill-tn',
+  path: '/scalp-facial-spring-hill-tn',
   getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
 } as any)
 const ServicesIndexRoute = ServicesIndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => ServicesRoute,
-} as any)
-const ServicesScalpRoute = ServicesScalpRouteImport.update({
-  id: '/scalp',
-  path: '/scalp',
-  getParentRoute: () => ServicesRoute,
-} as any)
-const ServicesHairRoute = ServicesHairRouteImport.update({
-  id: '/hair',
-  path: '/hair',
   getParentRoute: () => ServicesRoute,
 } as any)
 const ServicesEstheticsRoute = ServicesEstheticsRouteImport.update({
@@ -123,10 +118,15 @@ const ServicesEstheticsRoute = ServicesEstheticsRouteImport.update({
   path: '/esthetics',
   getParentRoute: () => ServicesRoute,
 } as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => BlogRoute,
+const ServicesHairRoute = ServicesHairRouteImport.update({
+  id: '/hair',
+  path: '/hair',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesScalpRoute = ServicesScalpRouteImport.update({
+  id: '/scalp',
+  path: '/scalp',
+  getParentRoute: () => ServicesRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -276,88 +276,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/scalp-facial-spring-hill-tn': {
-      id: '/scalp-facial-spring-hill-tn'
-      path: '/scalp-facial-spring-hill-tn'
-      fullPath: '/scalp-facial-spring-hill-tn'
-      preLoaderRoute: typeof ScalpFacialSpringHillTnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/nervous-system-reset-spring-hill-tn': {
-      id: '/nervous-system-reset-spring-hill-tn'
-      path: '/nervous-system-reset-spring-hill-tn'
-      fullPath: '/nervous-system-reset-spring-hill-tn'
-      preLoaderRoute: typeof NervousSystemResetSpringHillTnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/luxury-hair-salon-spring-hill-tn': {
-      id: '/luxury-hair-salon-spring-hill-tn'
-      path: '/luxury-hair-salon-spring-hill-tn'
-      fullPath: '/luxury-hair-salon-spring-hill-tn'
-      preLoaderRoute: typeof LuxuryHairSalonSpringHillTnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hair-and-esthetic-services-spring-hill-tn': {
-      id: '/hair-and-esthetic-services-spring-hill-tn'
-      path: '/hair-and-esthetic-services-spring-hill-tn'
-      fullPath: '/hair-and-esthetic-services-spring-hill-tn'
-      preLoaderRoute: typeof HairAndEstheticServicesSpringHillTnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/booking': {
-      id: '/booking'
-      path: '/booking'
-      fullPath: '/booking'
-      preLoaderRoute: typeof BookingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blonding-specialist-spring-hill-tn': {
-      id: '/blonding-specialist-spring-hill-tn'
-      path: '/blonding-specialist-spring-hill-tn'
-      fullPath: '/blonding-specialist-spring-hill-tn'
-      preLoaderRoute: typeof BlondingSpecialistSpringHillTnRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/balayage-spring-hill-tn': {
-      id: '/balayage-spring-hill-tn'
-      path: '/balayage-spring-hill-tn'
-      fullPath: '/balayage-spring-hill-tn'
-      preLoaderRoute: typeof BalayageSpringHillTnRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -367,32 +290,102 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/balayage-spring-hill-tn': {
+      id: '/balayage-spring-hill-tn'
+      path: '/balayage-spring-hill-tn'
+      fullPath: '/balayage-spring-hill-tn'
+      preLoaderRoute: typeof BalayageSpringHillTnRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blonding-specialist-spring-hill-tn': {
+      id: '/blonding-specialist-spring-hill-tn'
+      path: '/blonding-specialist-spring-hill-tn'
+      fullPath: '/blonding-specialist-spring-hill-tn'
+      preLoaderRoute: typeof BlondingSpecialistSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/booking': {
+      id: '/booking'
+      path: '/booking'
+      fullPath: '/booking'
+      preLoaderRoute: typeof BookingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hair-and-esthetic-services-spring-hill-tn': {
+      id: '/hair-and-esthetic-services-spring-hill-tn'
+      path: '/hair-and-esthetic-services-spring-hill-tn'
+      fullPath: '/hair-and-esthetic-services-spring-hill-tn'
+      preLoaderRoute: typeof HairAndEstheticServicesSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/luxury-hair-salon-spring-hill-tn': {
+      id: '/luxury-hair-salon-spring-hill-tn'
+      path: '/luxury-hair-salon-spring-hill-tn'
+      fullPath: '/luxury-hair-salon-spring-hill-tn'
+      preLoaderRoute: typeof LuxuryHairSalonSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nervous-system-reset-spring-hill-tn': {
+      id: '/nervous-system-reset-spring-hill-tn'
+      path: '/nervous-system-reset-spring-hill-tn'
+      fullPath: '/nervous-system-reset-spring-hill-tn'
+      preLoaderRoute: typeof NervousSystemResetSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scalp-facial-spring-hill-tn': {
+      id: '/scalp-facial-spring-hill-tn'
+      path: '/scalp-facial-spring-hill-tn'
+      fullPath: '/scalp-facial-spring-hill-tn'
+      preLoaderRoute: typeof ScalpFacialSpringHillTnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
     }
     '/services/': {
       id: '/services/'
       path: '/'
       fullPath: '/services/'
       preLoaderRoute: typeof ServicesIndexRouteImport
-      parentRoute: typeof ServicesRoute
-    }
-    '/services/scalp': {
-      id: '/services/scalp'
-      path: '/scalp'
-      fullPath: '/services/scalp'
-      preLoaderRoute: typeof ServicesScalpRouteImport
-      parentRoute: typeof ServicesRoute
-    }
-    '/services/hair': {
-      id: '/services/hair'
-      path: '/hair'
-      fullPath: '/services/hair'
-      preLoaderRoute: typeof ServicesHairRouteImport
       parentRoute: typeof ServicesRoute
     }
     '/services/esthetics': {
@@ -402,12 +395,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesEstheticsRouteImport
       parentRoute: typeof ServicesRoute
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof BlogRoute
+    '/services/hair': {
+      id: '/services/hair'
+      path: '/hair'
+      fullPath: '/services/hair'
+      preLoaderRoute: typeof ServicesHairRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/scalp': {
+      id: '/services/scalp'
+      path: '/scalp'
+      fullPath: '/services/scalp'
+      preLoaderRoute: typeof ServicesScalpRouteImport
+      parentRoute: typeof ServicesRoute
     }
   }
 }
@@ -460,3 +460,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

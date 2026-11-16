@@ -43,7 +43,7 @@ const categories = [
     eyebrow: "Esthetica",
     title: "Esthetic Services",
     description:
-      "Brows, lashes, and skin glow — beauty add-ons curated into focused packages for an effortless polished look.",
+      "Brow shaping, tinting, and lamination — curated into focused packages for an effortless polished look.",
     cta: "Explore Esthetic Services",
   },
 ];

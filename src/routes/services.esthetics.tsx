@@ -6,16 +6,16 @@ import { estheticGoals, estheticPackages } from "@/lib/services-data";
 export const Route = createFileRoute("/services/esthetics")({
   head: () => ({
     meta: [
-      { title: "Esthetic Services — Julia Marks Beauty" },
+      { title: "Brow Services — Julia Marks Beauty" },
       {
         name: "description",
         content:
-          "Brow shaping & tint, lash lift & tint, express dermaplane, and curated beauty packages in Spring Hill, TN.",
+          "Brow shaping, brow tint, and brow lamination in Spring Hill, TN — polished, effortless brows.",
       },
-      { property: "og:title", content: "Esthetic Services — Julia Marks Beauty" },
+      { property: "og:title", content: "Brow Services — Julia Marks Beauty" },
       {
         property: "og:description",
-        content: "Beauty add-ons, perfectly paired. Brows, lashes, and skin glow.",
+        content: "Brows, beautifully defined. Shaping, tinting, and lamination.",
       },
     ],
   }),
@@ -27,14 +27,14 @@ function EstheticServicesPage() {
     <>
       <PageHeader
         eyebrow="Esthetic Services"
-        title="Beauty add-ons, perfectly paired."
-        description="Quick, high-impact beauty services designed to fit seamlessly into your visit. Focused on maintenance, glow, and effortless beauty."
+        title="Brows, beautifully defined."
+        description="Brow shaping, tinting, and lamination designed to fit seamlessly into your visit. Focused on polished, effortless brows."
       />
 
       <section className="px-6 lg:px-8 pb-24 md:pb-32">
         <div className="max-w-4xl mx-auto">
           <div className="border border-foreground/10 bg-beige/20 p-8 md:p-10 mb-12">
-            <p className="eyebrow mb-4">Step 1 — Select your beauty goal</p>
+            <p className="eyebrow mb-4">Step 1 — Select your brow goal</p>
             <p className="text-foreground/70 mb-6">Choose what you want to enhance today:</p>
             <ul className="grid sm:grid-cols-2 gap-3">
               {estheticGoals.map((g) => (
@@ -100,64 +100,6 @@ function EstheticServicesPage() {
               </article>
             ))}
 
-            <article className="border border-foreground/10 bg-beige/20 p-8 md:p-10 space-y-5">
-              <header className="space-y-2 border-b border-foreground/10 pb-5">
-                <p className="eyebrow flex items-center gap-2">
-                  <span aria-hidden>🌙</span>
-                  <span>A CALMING SENSORY EXPERIENCE · 60 MIN</span>
-                </p>
-                <h3 className="font-serif italic text-3xl md:text-4xl leading-tight">
-                  Nervous System Reset
-                </h3>
-                <p className="text-2xl md:text-3xl font-serif">$120</p>
-              </header>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <p className="eyebrow mb-3">Includes</p>
-                  <ul className="space-y-2 text-sm text-foreground/70">
-                    {[
-                      "Scalp massage + sensory hair play",
-                      "Gentle touch relaxation for scalp, neck, temples",
-                      "Soft brushing + rhythmic calming movements",
-                      "Warm towel grounding moment",
-                      "Calming eye mask",
-                      "Fingertip touch techniques",
-                      "Quiet, low-stimulation environment",
-                    ].map((i) => (
-                      <li key={i} className="flex gap-2">
-                        <span className="text-accent">—</span>
-                        <span>{i}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <p className="eyebrow mb-3">Best for</p>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    Anyone navigating stress, anxiety, burnout, or overstimulation —
-                    a calming alternative to a traditional facial or salon visit.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-foreground/10 flex justify-between items-center gap-4 flex-wrap">
-                <Link
-                  to="/nervous-system-reset-spring-hill-tn"
-                  className="text-[11px] uppercase tracking-luxe border-b border-foreground/30 hover:border-accent hover:text-accent transition-colors pb-1"
-                >
-                  Learn more →
-                </Link>
-                <a
-                  href={VAGARO_BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11px] uppercase tracking-luxe border-b border-accent text-accent hover:text-foreground hover:border-foreground transition-colors"
-                >
-                  Book this service →
-                </a>
-              </div>
-            </article>
           </div>
 
           <div className="flex justify-center gap-6 flex-wrap pt-12">

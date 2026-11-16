@@ -219,12 +219,7 @@ export const scalpAddons = [
   },
 ] as const;
 
-export const estheticGoals = [
-  "Define my brows",
-  "Enhance my lashes",
-  "Refresh my skin glow",
-  "Full face refresh (brows + lashes + skin)",
-] as const;
+export const estheticGoals = ["Define my brows"] as const;
 
 export const estheticPackages = [
   {
@@ -242,32 +237,5 @@ export const estheticPackages = [
     tagline: "EYE BROW PENCIL FREE\u00a0",
     includes: ["Brow lamination", "Brow tint and brow shaping"],
     bestFor: "Clients with sparse or uneven brows, wanting fuller and fluffier brows, or lack structure",
-  },
-  {
-    icon: "✨",
-    title: "Full Face Refresh Package",
-    price: "$165",
-    tagline: "Complete eye + brow enhancement in one visit",
-    includes: ["Brow shaping", "Brow tint", "Brow lamination", "Express dermaplane"],
-    bestFor:
-      "Clients wanting a full polished look with maximum impact and low daily effort.",
-  },
-  {
-    icon: "🌿",
-    title: "Glow Tone Package",
-    price: "$60",
-    tagline: "Instant skin smoothing and brightness boost",
-    includes: ["Express dermaplane", "Hydration finish"],
-    bestFor:
-      "Dull skin, texture, makeup prep, or a quick glow before events or hair appointments.",
-  },
-  {
-    icon: "💖",
-    title: "Signature Maintenance Stack",
-    price: "$197",
-    tagline: "Your routine maintenance beauty reset",
-    includes: ["Brow shaping + tint\u00a0", "Hair play add on", "Express dermaplane"],
-    bestFor:
-      "Best for clients who are wanting a longer relaxing appointment with light finger point touch, hair play and nervous system reset",
   },
 ] as const;
